@@ -1,0 +1,4 @@
+E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Data.dll
+E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Data.pdb
+E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.dll
+E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.pdb
