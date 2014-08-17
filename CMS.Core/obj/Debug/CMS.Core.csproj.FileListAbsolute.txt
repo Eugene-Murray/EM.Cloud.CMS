@@ -1,4 +1,4 @@
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Core\bin\Debug\CMS.Core.dll
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Core\bin\Debug\CMS.Core.pdb
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Core\obj\Debug\CMS.Core.dll
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Core\obj\Debug\CMS.Core.pdb
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Core\bin\Debug\CMS.Core.dll
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Core\bin\Debug\CMS.Core.pdb
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Core\obj\Debug\CMS.Core.dll
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Core\obj\Debug\CMS.Core.pdb

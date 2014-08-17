@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +41,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Data\DataContext.cs" />
+    <Compile Include="Data\Interceptor\IInterceptor.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\LinqFilteringUtility.cs" />
+    <Compile Include="Data\PagingExtensions.cs" />
+    <Compile Include="EFLogging\DbTracingbHelper.cs" />
+    <Compile Include="EFLogging\DbTracingConnection.cs" />
+    <Compile Include="Files\MimeType.cs" />
+    <Compile Include="HttpContext\CurrentHttpContext.cs" />
+    <Compile Include="HttpContext\ICurrentHttpContext.cs" />
+    <Compile Include="HTTP\HttpModelStateFilter.cs" />
+    <Compile Include="LogHandling\ILogHandler.cs" />
+    <Compile Include="LogHandling\LogCategory.cs" />
+    <Compile Include="LogHandling\LogEntryData.cs" />
+    <Compile Include="LogHandling\LogHandler.cs" />
+    <Compile Include="LogHandling\LogSeverity .cs" />
+    <Compile Include="MVC\BootstrapHtmlExtensions.cs" />
+    <Compile Include="MVC\GridFilter.cs" />
+    <Compile Include="MVC\HtmlPropertiesAttribute.cs" />
+    <Compile Include="MVC\JsonNetResult.cs" />
+    <Compile Include="MVC\MetadataProvider.cs" />
+    <Compile Include="MVC\MvcAuthorizeFilter.cs" />
+    <Compile Include="MVC\MvcExceptionFilter.cs" />
+    <Compile Include="MVC\MvcModelStateFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\Serializer.cs" />
+    <Compile Include="Validation\ValidateObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Interceptor\Interceptors\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace FlashCards.Controllers
+namespace CMS.Controllers
 {
    public class HomeController : Controller
    {

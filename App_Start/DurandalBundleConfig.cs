@@ -1,7 +1,7 @@
 using System;
 using System.Web.Optimization;
 
-namespace FlashCards
+namespace CMS
 {
    public class DurandalBundleConfig
    {
@@ -15,18 +15,19 @@ namespace FlashCards
              .Include("~/Scripts/jquery-{version}.js")
              .Include("~/Scripts/bootstrap.js")
              .Include("~/Scripts/knockout-{version}.js")
+             .Include("~/Scripts/knockout-kendo.js")
           );
 
          bundles.Add(
            new StyleBundle("~/Content/css")
-             .Include("~/Content/ie10mobile.css")
+             //.Include("~/Content/ie10mobile.css")
              .Include("~/Content/bootstrap.min.css")
-             .Include("~/Content/bootstrap-theme.min.css")
+             //.Include("~/Content/bootstrap-theme.min.css")
              .Include("~/Content/font-awesome.min.css")
              .Include("~/Content/durandal.css")
              .Include("~/Content/starterkit.css")
              .Include("~/Content/app.css")
-             .Include("~/Content/flashcards.css")
+             .Include("~/Content/cms.css")
            );
       }
 

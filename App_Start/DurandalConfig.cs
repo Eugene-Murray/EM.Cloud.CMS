@@ -2,9 +2,9 @@ using System;
 using System.Web.Optimization;
 
 [assembly: WebActivator.PostApplicationStartMethod(
-    typeof(FlashCards.App_Start.DurandalConfig), "PreStart")]
+    typeof(CMS.App_Start.DurandalConfig), "PreStart")]
 
-namespace FlashCards.App_Start
+namespace CMS.App_Start
 {
     public static class DurandalConfig
     {

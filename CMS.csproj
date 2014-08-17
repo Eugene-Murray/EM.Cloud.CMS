@@ -123,7 +123,6 @@
     <Compile Include="App_Start\DurandalBundleConfig.cs" />
     <Compile Include="App_Start\DurandalConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\TemplateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -133,7 +132,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="AppBuilt\main.js" />
     <Content Include="App\main.js" />
     <Content Include="App\mockData\durandal.js" />
     <Content Include="App\mockData\multiplication.js" />
@@ -143,24 +141,98 @@
     <Content Include="App\models\random.js" />
     <Content Include="App\models\selectedCards.js" />
     <Content Include="App\services\flashCardService.js" />
-    <Content Include="App\services\templateService.js" />
+    <Content Include="App\services\templatesService.js" />
+    <Content Include="App\viewmodels\about2.js" />
     <Content Include="App\viewmodels\about.js" />
-    <Content Include="App\viewmodels\admin.js" />
-    <Content Include="App\viewmodels\catalog.js" />
+    <Content Include="App\viewmodels\card.js" />
     <Content Include="App\viewmodels\home.js" />
+    <Content Include="App\viewmodels\page.js" />
+    <Content Include="App\viewmodels\siteConfiguration.js" />
+    <Content Include="App\viewmodels\templatebase.js" />
+    <Content Include="App\viewmodels\widgets\widget2.js" />
+    <Content Include="App\viewmodels\widgets\widget3.js" />
+    <Content Include="App\viewmodels\widgets\widget4.js" />
+    <Content Include="App\viewmodels\widgets\widget5.js" />
+    <Content Include="App\viewmodels\widgets\widget15.js" />
+    <Content Include="App\viewmodels\widgets\widget14.js" />
+    <Content Include="App\viewmodels\widgets\widget13.js" />
+    <Content Include="App\viewmodels\widgets\widget11.js" />
+    <Content Include="App\viewmodels\widgets\widget12.js" />
+    <Content Include="App\viewmodels\widgets\widget10.js" />
+    <Content Include="App\viewmodels\widgets\widget9.js" />
+    <Content Include="App\viewmodels\widgets\widget8.js" />
+    <Content Include="App\viewmodels\widgets\widget7.js" />
+    <Content Include="App\viewmodels\widgets\widget6.js" />
+    <Content Include="App\viewmodels\widgets\widget1.js" />
+    <Content Include="App\viewmodels\widgets\testWidget.js" />
+    <Content Include="App\views\about2.html" />
+    <Content Include="App\views\ko\animatedTrans\index.html" />
+    <Content Include="App\views\ko\animatedTrans\index.js" />
+    <Content Include="App\views\ko\betterList\index.html" />
+    <Content Include="App\views\ko\betterList\index.js" />
+    <Content Include="App\views\ko\clickCounter\index.html" />
+    <Content Include="App\views\ko\clickCounter\index.js" />
+    <Content Include="App\views\ko\collections\index.html" />
+    <Content Include="App\views\ko\collections\index.js" />
+    <Content Include="App\views\ko\contactsEditor\index.html" />
+    <Content Include="App\views\ko\contactsEditor\index.js" />
+    <Content Include="App\views\ko\controlTypes\index.html" />
+    <Content Include="App\views\ko\controlTypes\index.js" />
+    <Content Include="App\views\ko\gridEditor\index.html" />
+    <Content Include="App\views\ko\gridEditor\index.js" />
+    <Content Include="App\views\ko\helloWorld\index.html" />
+    <Content Include="App\views\ko\helloWorld\index.js" />
+    <Content Include="App\views\ko\index.html" />
+    <Content Include="App\views\ko\index.js" />
+    <Content Include="App\views\ko\pagedGrid\index.html" />
+    <Content Include="App\views\ko\pagedGrid\index.js" />
+    <Content Include="App\views\ko\pagedGrid\simpleGrid.html" />
+    <Content Include="App\views\ko\pagedGrid\simpleGrid.js" />
+    <Content Include="App\views\ko\shoppingCart\index.html" />
+    <Content Include="App\views\ko\shoppingCart\index.js" />
+    <Content Include="App\views\ko\shoppingCart\sampleProductCategories.js" />
+    <Content Include="App\views\ko\simpleList\index.html" />
+    <Content Include="App\views\ko\simpleList\index.js" />
+    <Content Include="App\views\page.html" />
+    <Content Include="App\views\siteConfiguration.html" />
+    <Content Include="App\views\home.html" />
+    <Content Include="App\views\card.html" />
+    <Content Include="App\viewmodels\cards.js" />
+    <Content Include="App\viewmodels\catalog.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\views\about.html" />
-    <Content Include="App\views\admin.html" />
+    <Content Include="App\views\cards.html" />
     <Content Include="App\views\catalog.html" />
-    <Content Include="App\views\home.html" />
+    <Content Include="App\views\navBar.html" />
     <Content Include="App\views\shell.html" />
+    <Content Include="App\views\pageStructureTemplates\10Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\9Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\7Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\6Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\3Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\Holding-Template.html" />
+    <Content Include="App\views\widgets\widget15.html" />
+    <Content Include="App\views\widgets\widget14.html" />
+    <Content Include="App\views\widgets\widget13.html" />
+    <Content Include="App\views\widgets\widget12.html" />
+    <Content Include="App\views\widgets\widget11.html" />
+    <Content Include="App\views\widgets\widget10.html" />
+    <Content Include="App\views\widgets\widget9.html" />
+    <Content Include="App\views\widgets\widget8.html" />
+    <Content Include="App\views\widgets\widget7.html" />
+    <Content Include="App\views\widgets\widget6.html" />
+    <Content Include="App\views\widgets\widget5.html" />
+    <Content Include="App\views\widgets\widget4.html" />
+    <Content Include="App\views\widgets\widget3.html" />
+    <Content Include="App\views\widgets\widget2.html" />
+    <Content Include="App\views\widgets\widget1.html" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\durandal.css" />
-    <Content Include="Content\flashcards.css" />
+    <Content Include="Content\cms.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\ie10mobile.css" />
@@ -200,28 +272,14 @@
     <Content Include="Scripts\durandal\transitions\entrance.js" />
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
-    <Content Include="Scripts\infuser-amd.js" />
-    <Content Include="Scripts\infuser-amd.min.gz.js" />
-    <Content Include="Scripts\infuser-amd.min.js" />
-    <Content Include="Scripts\infuser.js" />
-    <Content Include="Scripts\infuser.min.gz.js" />
-    <Content Include="Scripts\infuser.min.js" />
-    <Content Include="Scripts\koExternalTemplateEngine-amd.js" />
-    <Content Include="Scripts\koExternalTemplateEngine-amd.min.js" />
-    <Content Include="Scripts\koExternalTemplateEngine.js" />
-    <Content Include="Scripts\koExternalTemplateEngine.min.js" />
-    <Content Include="Scripts\koExternalTemplateEngine_all.js" />
-    <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
-    <Content Include="Scripts\TrafficCop-amd.js" />
-    <Content Include="Scripts\TrafficCop-amd.min.gz.js" />
-    <Content Include="Scripts\TrafficCop-amd.min.js" />
-    <Content Include="Scripts\TrafficCop.js" />
-    <Content Include="Scripts\TrafficCop.min.gz.js" />
-    <Content Include="Scripts\TrafficCop.min.js" />
-    <Content Include="weyland-config.js" />
     <Content Include="readme.md" />
-    <None Include="Properties\PublishProfiles\FlashCards.Provenstyle.com.pubxml" />
-    <None Include="Properties\PublishProfiles\ToFileSystem.pubxml" />
+    <Content Include="App\views\pageStructureTemplates\1Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\2Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\4Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\5Section-PageStructureTemplate.html" />
+    <Content Include="App\views\pageStructureTemplates\8Section-PageStructureTemplate.html">
+      <SubType>Code</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -229,6 +287,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\knockout-kendo.js" />
+    <Content Include="Scripts\knockout-kendo.min.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\text.js" />
@@ -247,9 +307,24 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CMS.Core\CMS.Core.csproj">
+      <Project>{9b93e148-62c7-40ff-ab29-36271ccff63e}</Project>
+      <Name>CMS.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="CMS.Data\CMS.Data.csproj">
+      <Project>{cef46945-81b9-494b-8076-bf9b1724f796}</Project>
+      <Name>CMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="CMS.Models\CMS.Models.csproj">
+      <Project>{f7af10e0-e5c7-42fb-85d5-c722717a5227}</Project>
+      <Name>CMS.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

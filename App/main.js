@@ -1,4 +1,5 @@
-﻿requirejs.config({
+﻿
+requirejs.config({
    paths: {
       'text': '../Scripts/text',
       'durandal': '../Scripts/durandal',
@@ -10,12 +11,12 @@
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function(system, app, viewLocator) {
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function(system, app, viewLocator, infuser) {
    //>>excludeStart("build", true);
    system.debug(true);
    //>>excludeEnd("build");
 
-   app.title = 'EM.Cloud.CMS';
+   app.title = 'BaSE';
 
    app.configurePlugins({
       router: true,
@@ -25,6 +26,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function(sys
    });
 
    app.start().then(function() {
+
       //Replace 'viewmodels' in the moduleId with 'views' to locate the view.
       //Look for partial views in a 'views' folder in the root.
       viewLocator.useConvention();

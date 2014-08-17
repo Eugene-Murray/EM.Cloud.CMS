@@ -1,6 +1,5 @@
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.dll
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.pdb
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\bin\Debug\DataAnnotationsExtensions.dll
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.csprojResolveAssemblyReference.cache
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.dll
-E:\Code\Work\CMS\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.pdb
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.dll
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.pdb
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\bin\Debug\DataAnnotationsExtensions.dll
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.dll
+C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.pdb
