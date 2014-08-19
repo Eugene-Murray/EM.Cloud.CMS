@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'durandal/app', 'knockout', 'plugins/router'], function (system, app, ko, router) {
+﻿define(['durandal/system', 'durandal/app', 'knockout', 'plugins/router', 'toastr'], function (system, app, ko, router, toastr) {
 
     var vm = {};
     vm.txt = 'observable';

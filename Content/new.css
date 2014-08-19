@@ -1,0 +1,162 @@
+﻿.div-border-red{
+        border-style : solid;
+        border-color: red;
+        border-width: 2px;
+}
+
+.div-border-black {
+        border-style : solid;
+        border-color: black;
+        border-width: 2px;
+}
+
+.section-margin {
+    margin-bottom : 5px
+}
+
+/* app */
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
+    /*text-transform: uppercase;*/
+}
+
+.splash .icon-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.page-host {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 60px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*.navbar-fixed-top .navbar-inner {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navbar-fixed-top .icon-home {
+    font-size: 18px
+}*/
+
+.loader {
+    margin: 6px 8px 4px 8px;
+    visibility: hidden;
+}
+
+.loader.active {
+    visibility: visible;
+}
+
+/*@media (max-width: 979px) {
+    .page-host {
+        top: 0;
+    }
+
+    .navbar-fixed-top {
+        margin-bottom: 0;
+    }
+
+}*/
+
+/* cms ----------------- */
+
+/*div.checkbox {
+   margin-top: 15px;
+   margin-left: 15px;
+}
+
+.navbar label {
+   color: rgb(153, 153, 153);
+}*/
+
+
+div.status {
+   margin-top: 8px;
+   color: #666; 
+}
+
+.status .selectedName {
+   margin-left: 10px;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.card {    
+    position: relative;        
+    margin-top: 8px;     
+    cursor: pointer
+}
+
+.previous.hidden {
+   visibility: hidden;
+   display: block!important;
+}
+
+.next.hidden {
+   visibility: hidden;
+   display: block!important;
+}
+
+.card .face {
+    position:absolute;
+   min-height: 200px;
+    
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    -o-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+
+.card .back {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;    
+    backface-visibility: hidden;
+
+    -moz-transform: perspective(1500px) rotateY(-180deg);
+    -webkit-transform: perspective(1500px) rotateY(-180deg);    
+    transform: perspective(1500px) rotateY(-180deg);        
+}
+
+.card .front {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -moz-transform: perspective(1500px) rotateY(0deg);
+    -webkit-transform: perspective(1500px) rotateY(0deg);
+    transform: perspective(1500px) rotateY(0deg);    
+}
+
+.card.flip .back {
+    -moz-transform: perspective(1500px) rotateY(0);
+    -webkit-transform: perspective(1500px) rotateY(0);
+    transform: perspective(1500px) rotateY(0);
+}
+.card.flip .front {
+    -webkit-transform: perspective(1500px) rotateY(180deg);
+    -moz-transform: perspective(1500px) rotateY(180deg);
+    transform: perspective(1500px) rotateY(180deg);
+}
+
+/*section {
+    margin: 0 20px;
+}*/
+

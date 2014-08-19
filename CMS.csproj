@@ -132,7 +132,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App\helpers.js" />
     <Content Include="App\main.js" />
+    <Content Include="App\mockData\inputWorkFlow.js" />
     <Content Include="App\mockData\durandal.js" />
     <Content Include="App\mockData\multiplication.js" />
     <Content Include="App\mockData\requirejs.js" />
@@ -142,10 +144,12 @@
     <Content Include="App\models\selectedCards.js" />
     <Content Include="App\services\flashCardService.js" />
     <Content Include="App\services\templatesService.js" />
+    <Content Include="App\viewmodels\inputWorkflow.js" />
     <Content Include="App\viewmodels\about2.js" />
     <Content Include="App\viewmodels\about.js" />
     <Content Include="App\viewmodels\card.js" />
-    <Content Include="App\viewmodels\home.js" />
+    <Content Include="App\viewmodels\detail.js" />
+    <Content Include="App\viewmodels\listOfDeals.js" />
     <Content Include="App\viewmodels\page.js" />
     <Content Include="App\viewmodels\siteConfiguration.js" />
     <Content Include="App\viewmodels\templatebase.js" />
@@ -164,8 +168,9 @@
     <Content Include="App\viewmodels\widgets\widget7.js" />
     <Content Include="App\viewmodels\widgets\widget6.js" />
     <Content Include="App\viewmodels\widgets\widget1.js" />
-    <Content Include="App\viewmodels\widgets\testWidget.js" />
+    <Content Include="App\views\inputWorkflow.html" />
     <Content Include="App\views\about2.html" />
+    <Content Include="App\views\detail.html" />
     <Content Include="App\views\ko\animatedTrans\index.html" />
     <Content Include="App\views\ko\animatedTrans\index.js" />
     <Content Include="App\views\ko\betterList\index.html" />
@@ -195,7 +200,7 @@
     <Content Include="App\views\ko\simpleList\index.js" />
     <Content Include="App\views\page.html" />
     <Content Include="App\views\siteConfiguration.html" />
-    <Content Include="App\views\home.html" />
+    <Content Include="App\views\listOfDeals.html" />
     <Content Include="App\views\card.html" />
     <Content Include="App\viewmodels\cards.js" />
     <Content Include="App\viewmodels\catalog.js" />
@@ -244,7 +249,34 @@
     <Content Include="Content\images\StartUp1024x748.png" />
     <Content Include="Content\images\StartUp640x1026.png" />
     <Content Include="Content\images\StartUp768X1004.png" />
+    <Content Include="Content\images\widget1.png" />
+    <Content Include="Content\images\widget2.png" />
+    <Content Include="Content\kendo\bootstrap\editor.png" />
+    <Content Include="Content\kendo\bootstrap\imagebrowser.png" />
+    <Content Include="Content\kendo\bootstrap\indeterminate.gif" />
+    <Content Include="Content\kendo\bootstrap\loading-image.gif" />
+    <Content Include="Content\kendo\bootstrap\loading.gif" />
+    <Content Include="Content\kendo\bootstrap\loading_2x.gif" />
+    <Content Include="Content\kendo\bootstrap\markers.png" />
+    <Content Include="Content\kendo\bootstrap\markers_2x.png" />
+    <Content Include="Content\kendo\bootstrap\slider-h.gif" />
+    <Content Include="Content\kendo\bootstrap\slider-v.gif" />
+    <Content Include="Content\kendo\bootstrap\sprite.png" />
+    <Content Include="Content\kendo\bootstrap\sprite_2x.png" />
+    <Content Include="Content\kendo\kendo.bootstrap-theme.css" />
+    <Content Include="Content\kendo\kendo.bootstrap.min.css" />
+    <Content Include="Content\kendo\kendo.bootstrap.mobile.min.css" />
+    <Content Include="Content\kendo\kendo.common-bootstrap.core.min.css" />
+    <Content Include="Content\kendo\kendo.common-bootstrap.min.css" />
+    <Content Include="Content\kendo\kendo.common.core.min.css" />
+    <Content Include="Content\kendo\kendo.common.min.css" />
+    <Content Include="Content\kendo\kendo.custom.css" />
+    <Content Include="Content\kendo\kendo.rtl.min.css" />
+    <Content Include="Content\new.css" />
+    <Content Include="Content\samples.css" />
     <Content Include="Content\starterkit.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -280,11 +312,27 @@
     <Content Include="App\views\pageStructureTemplates\8Section-PageStructureTemplate.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Content\toastr.less" />
+    <Content Include="Content\toastr.scss" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\external\infuser-amd.js" />
+    <Content Include="Scripts\external\infuser-amd.min.js" />
+    <Content Include="Scripts\external\infuser.js" />
+    <Content Include="Scripts\external\infuser.min.js" />
+    <Content Include="Scripts\external\koExternalTemplateEngine-amd.js" />
+    <Content Include="Scripts\external\koExternalTemplateEngine.js" />
+    <Content Include="Scripts\external\koExternalTemplateEngine.min.js" />
+    <Content Include="Scripts\external\koExternalTemplateEngine_all.js" />
+    <Content Include="Scripts\external\TrafficCop-amd.js" />
+    <Content Include="Scripts\external\TrafficCop-amd.min.js" />
+    <Content Include="Scripts\external\TrafficCop.js" />
+    <Content Include="Scripts\external\TrafficCop.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\kendo\kendo.all.js" />
+    <Content Include="Scripts\kendo\kendo.web.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\knockout-kendo.js" />
@@ -292,6 +340,8 @@
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\text.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -303,6 +353,7 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_splash.cshtml" />
+    <Content Include="Scripts\toastr.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

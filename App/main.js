@@ -10,8 +10,12 @@ requirejs.config({
 
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
+define('kendo', kendo);
+define('kokendo', ko.kendo);
+define('infuser', infuser);
+define('toastr', toastr);
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function(system, app, viewLocator, infuser) {
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], function (system, app, viewLocator, infuser) {
    //>>excludeStart("build", true);
    system.debug(true);
    //>>excludeEnd("build");
@@ -26,6 +30,15 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'], function(sys
    });
 
    app.start().then(function() {
+
+       infuser.defaults.templateUrl = "app/views/widgets/";
+       //infuser.defaults.templateSuffix = "";
+       //infuser.defaults.loadingTemplate.content = '<div class="val-loading-container val-loading-container-xs val-padding pull-left">'
+       //                                                + '<div class="val-rotation-loading">'
+       //                                                    + '<div><div><div><div><div><div>'
+       //                                                    + '</div></div></div></div></div></div>'
+       //                                                + '</div>'
+       //                                            + '</div>';
 
       //Replace 'viewmodels' in the moduleId with 'views' to locate the view.
       //Look for partial views in a 'views' folder in the root.

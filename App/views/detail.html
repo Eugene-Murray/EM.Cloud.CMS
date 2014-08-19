@@ -1,0 +1,108 @@
+﻿<section>
+    <div class="row">
+        <!--<div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="section-margin">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <a class="btn btn-primary" href="#">
+                                    <span class="fa fa-search"></span>
+                                </a>
+                            </span>
+                        </div>
+                    </section>
+                </div>-->
+                <div class="col-md-12">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                                
+                                     <i class="fa fa-arrow-left" data-bind="click: onClick_Back"></i>
+                            
+                                     <i class="fa fa-cog" data-bind="click: onClick_UserGridConfig"></i>
+                                </div>
+
+                        <div class="panel-body">
+
+                            <section class="section-margin" data-bind="visible: showConfigurePanel">
+                                <div class="well">
+                                    configure
+                                </div>
+                            </section>
+                            <!--<div class="col-xs-6">-->
+                                <section class="section-margin">
+
+                                    <div class="input-group">
+
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-btn">
+                                            <a class="btn btn-primary" href="#">
+                                                <span class="fa fa-search"></span>
+                                            </a>
+                                        </span>
+                                    </div>
+
+                                </section>
+                            <!--</div>-->
+                            <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+                            <script id="ListOfDealsTable-row-template" type="text/html">
+                                <tr data-bind="event: { click: $parent.onClickRow }">
+                                    <td><span data-bind="text: id" /></td>
+                                    <td><span data-bind="text: BusinessType" /></td>
+                                    <td><span data-bind="text: Project" /></td>
+                                    <td><span data-bind="text: CorpSponsor" /></td>
+                                    <td><span data-bind="text: Tranche" /></td>
+                                    <td><span data-bind="text: Status" /></td>
+                                    <td><span data-bind="text: CCY" /></td>
+                                    <td><span data-bind="text: LocalCCYAmount" /></td>
+                                    <td><span data-bind="text: Amt" /></td>
+                                    <td><span data-bind="text: Facility" /></td>
+                                    <td>
+                                        <span data-bind="text: Indent" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: Seniority" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: EcoPercent" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: ExpAmount" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: AmountSyndicate" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: ExpPostSyndicate" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: ProFormaEco" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: ProFormaAmount" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: Value" />
+                                    </td>
+
+                                    <td>
+                                        <span data-bind="text: BridgeLimit" />
+                                    </td>
+                                    <td>
+                                        <span data-bind="text: SponsorLimit" />
+                                    </td>
+                                </tr>
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        <!--</div>
+    </div>-->
+</section>   
+
+
+

@@ -5,7 +5,7 @@ define(['durandal/system', 'knockout', 'services/templatesService'], function (s
     var self = {};
     self.widgetPath = 'viewmodels/widgets/';
     self.pageStructureTemplatePath = 'pageStructureTemplates/';
-    self.pageStrctureTemplate = ko.observable(self.pageStructureTemplatePath + '10Section-PageStructureTemplate.html');
+    self.pageStrctureTemplate = ko.observable(self.pageStructureTemplatePath + '2Section-PageStructureTemplate.html');
     self.section1 = ko.observable(self.widgetPath + 'widget1');
     self.section2 = ko.observable(self.widgetPath + 'widget2');
     self.section3 = ko.observable(self.widgetPath + 'widget3');
