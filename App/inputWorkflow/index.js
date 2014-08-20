@@ -5,7 +5,8 @@
                 moduleId: 'inputWorkflow',
                 fromParent: true
             }).map([
-                { route: ['','teamSheets'], moduleId: 'teamSheets/index', title: 'Team Sheets', type: 'intro', nav: true },
+                { route: '', moduleId: 'teamSheets/index', title: 'Team Sheets', type: 'intro' },
+                { route: 'teamSheets', moduleId: 'teamSheets/index', title: 'Team Sheets', type: 'intro', nav: true },
                 { route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', type: 'intro', nav: true },
                 { route: 'masterBook', moduleId: 'masterBook/index', title: 'Master Book', type: 'intro', nav: true },
                 { route: 'tradeSubmission', moduleId: 'tradeSubmission/index', title: 'Trade Submission', type: 'intro', nav: true },
