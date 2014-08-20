@@ -14,6 +14,7 @@ define('kendo', kendo);
 define('kokendo', ko.kendo);
 define('infuser', infuser);
 define('toastr', toastr);
+define('underscore', _);
 
 define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], function (system, app, viewLocator, infuser) {
    //>>excludeStart("build", true);

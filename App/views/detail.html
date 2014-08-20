@@ -19,16 +19,25 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                                 
-                                     <i class="fa fa-arrow-left" data-bind="click: onClick_Back"></i>
+                            <i class="fa fa-arrow-left" data-bind="click: onClick_Back" title="Back"></i>
                             
-                                     <i class="fa fa-cog" data-bind="click: onClick_UserGridConfig"></i>
+                            <i class="fa fa-cog" data-bind="click: onClick_UserGridConfig" title="User Settings"></i>
                                 </div>
 
                         <div class="panel-body">
 
                             <section class="section-margin" data-bind="visible: showConfigurePanel">
                                 <div class="well">
-                                    configure
+                                   <h4>Select Grid Columns</h4>
+                                    <ul>
+                                        <!--ko foreach: gridOptions -->
+                                        <li>
+                                            <span data-bind="text: title"></span> <input type="checkbox" data-bind="checked: show"/>
+                                        </li>
+                                        <!--/ko-->
+                                    </ul>
+                                    <a href="#" class="btn btn-primary" data-bind="click: onClick_SaveGridOptions">Save User Settngs</a>
+
                                 </div>
                             </section>
                             <!--<div class="col-xs-6">-->

@@ -22,6 +22,7 @@ namespace CMS
              .Include("~/Scripts/external/trafficcop.js")
              .Include("~/Scripts/external/koexternaltemplateengine.js")
              .Include("~/Scripts/toastr.js")
+             .Include("~/Scripts/underscore.js")
           );
 
          bundles.Add(
@@ -32,9 +33,17 @@ namespace CMS
              .Include("~/Content/font-awesome.min.css")
              .Include("~/Content/toastr.css")
              .Include("~/Content/durandal.css")
-             .Include("~/content/kendo/kendo.common-bootstrap.min.css")
-             .Include("~/content/kendo/kendo.bootstrap.min.css")
              .Include("~/Content/new.css")
+
+         
+             .Include("~/content/kendo/kendo.common.min.css")
+             //.Include("~/content/kendo/kendo.common.core.min.css")
+             .Include("~/Content/kendo/kendo.blueopal.min.css")
+
+             //.Include("~/content/kendo/kendo.common-bootstrap.min.css")
+             //.Include("~/content/kendo/kendo.bootstrap.min.css")
+
+             
 
              //.Include("~/content/kendo/kendo.common.min.css")
              //"~/content/kendo/kendo.rtl.min.css"

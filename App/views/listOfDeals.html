@@ -18,7 +18,7 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-folder-open" data-bind="click: onClick_OpenDetails"></i>
+                            <i class="fa fa-table" data-bind="click: onClick_OpenDetails" title="Open Full Details Table"></i>
                         </div>
 
                         <div class="panel-body">
@@ -52,7 +52,7 @@
 
             <div class="card">
 
-                <div class="col-xs-12 well front face ">
+                <div class="col-xs-12 mywell front face ">
                     <h4>Preview</h4>
 
                     <form class="form-horizontal" role="form">
@@ -68,7 +68,7 @@
                     <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>
                     <button type="button" class="btn btn-success" data-bind="click: changeWidgetFront"><i class="fa fa-desktop"></i></button>
                 </div>
-                <div class="col-xs-12 well back face">
+                <div class="col-xs-12 mywell back face">
                     <h4>More Details</h4>
                     <div data-bind="template: { name: templateNameBack }"></div>
                     <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>

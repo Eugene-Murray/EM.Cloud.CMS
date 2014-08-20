@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'knockout', 'viewmodels/templatebase', 'plugins/router', 'kendo', 'kokendo'], function (system, ko, templatebase, router, kendo, kokendo) {
+﻿define(['durandal/system', 'knockout', 'viewmodels/templatebase', 'plugins/router', 'kendo', 'kokendo', 'underscore'], function (system, ko, templatebase, router, kendo, kokendo, _) {
     //debugger;
     var vm = {};
     vm.selectedRow = ko.observable(''); 
@@ -25,6 +25,30 @@
         { id: 19, BusinessType: "Business Type", Project: "Project", CorpSponsor: "Corp Sponsor", Tranche: "Tranche", Status: "Status", CCY: "CCY", LocalCCYAmount: "LocalCCYAmount", Amt: "Amt", Facility: "Facility 19", Indent: "Indent", Seniority: "Seniority", EcoPercent: "EcoPercent", ExpAmount: "ExpAmount", AmountSyndicate: "AmountSyndicate", ExpPostSyndicate: "ExpPostSyndicate", ProFormaEco: "ProFormaEco", ProFormaAmount: "ProFormaAmount", Value: "Value", BridgeLimit: "BridgeLimit", SponsorLimit: "SponsorLimit" },
         { id: 20, BusinessType: "Business Type", Project: "Project", CorpSponsor: "Corp Sponsor", Tranche: "Tranche", Status: "Status", CCY: "CCY", LocalCCYAmount: "LocalCCYAmount", Amt: "Amt", Facility: "Facility 20", Indent: "Indent", Seniority: "Seniority", EcoPercent: "EcoPercent", ExpAmount: "ExpAmount", AmountSyndicate: "AmountSyndicate", ExpPostSyndicate: "ExpPostSyndicate", ProFormaEco: "ProFormaEco", ProFormaAmount: "ProFormaAmount", Value: "Value", BridgeLimit: "BridgeLimit", SponsorLimit: "SponsorLimit" },
 
+    ]);
+    vm.gridOptions = ko.observableArray(
+        [
+                { field: "id", title: "Id", show : true },
+                { field: "BusinessType", title: "Business Type", show: true },
+                { field: "Project", title: "Project", show: true },
+                { field: "CorpSponsor", title: "Corp Sponsor", show: true },
+                { field: "Tranche", title: "Tranche", show: true },
+                { field: "Status", title: "Status", show: true },
+                { field: "CCY", title: "CCY", show: true },
+                { field: "LocalCCYAmount", title: "LocalCCYAmount", show: true },
+                { field: "Amt", title: "Amt", show: true },
+                { field: "Facility", title: "Facility", show: true },
+                { field: "Indent", title: "Indent", show: true },
+                { field: "Seniority", title: "Seniority", show: true },
+                { field: "EcoPercent", title: "EcoPercent", show: true },
+                { field: "ExpAmount", title: "ExpAmount", show: true },
+                { field: "AmountSyndicate", title: "AmountSyndicate", show: true },
+                { field: "ExpPostSyndicate", title: "ExpPostSyndicate", show: true },
+                { field: "ProFormaEco", title: "ProFormaEco", show: true },
+                { field: "ProFormaAmount", title: "ProFormaAmount", show: true },
+                { field: "Value", title: "Value", show: true },
+                { field: "BridgeLimit", title: "Bridge Limit", show: true },
+                { field: "SponsorLimit", title: "Sponsor Limit", show: true }
     ]);
 
     vm.activate = function () {
@@ -90,6 +114,41 @@
 
        
     };
+
+    vm.onClick_SaveGridOptions = function () {
+        var grid = $("table.k-selectable").data("kendoGrid");
+        if (grid) {
+
+            $.each(vm.gridOptions(), function (index, value) {
+                if (value.show) {
+                    grid.showColumn(value.field);
+                }
+                else {
+                    grid.hideColumn(value.field);
+                }
+            });
+        }
+    };
+
+    //vm.gridOptions.subscribe(function (updatedGridOptions) {
+    //    if (updatedGridOptions !== undefined) {
+    //        var grid = $("table.k-selectable").data("kendoGrid");
+    //        if (grid) {
+
+    //            //$.each(vm.GridColumnOptions, function (index, value) {
+    //            //    var result = _.findWhere(newCols, value);
+
+    //            //    if (result) {
+    //            //        grid.showColumn(value.field);
+    //            //    }
+    //            //    else {
+    //            //        grid.hideColumn(value.field);
+    //            //    }
+
+    //            //});
+    //        }
+    //    }
+    //});
 
     return vm;
 });

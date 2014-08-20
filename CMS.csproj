@@ -251,6 +251,18 @@
     <Content Include="Content\images\StartUp768X1004.png" />
     <Content Include="Content\images\widget1.png" />
     <Content Include="Content\images\widget2.png" />
+    <Content Include="Content\kendo\BlueOpal\editor.png" />
+    <Content Include="Content\kendo\BlueOpal\imagebrowser.png" />
+    <Content Include="Content\kendo\BlueOpal\indeterminate.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading-image.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading.gif" />
+    <Content Include="Content\kendo\BlueOpal\loading_2x.gif" />
+    <Content Include="Content\kendo\BlueOpal\markers.png" />
+    <Content Include="Content\kendo\BlueOpal\markers_2x.png" />
+    <Content Include="Content\kendo\BlueOpal\slider-h.gif" />
+    <Content Include="Content\kendo\BlueOpal\slider-v.gif" />
+    <Content Include="Content\kendo\BlueOpal\sprite.png" />
+    <Content Include="Content\kendo\BlueOpal\sprite_2x.png" />
     <Content Include="Content\kendo\bootstrap\editor.png" />
     <Content Include="Content\kendo\bootstrap\imagebrowser.png" />
     <Content Include="Content\kendo\bootstrap\indeterminate.gif" />
@@ -263,6 +275,8 @@
     <Content Include="Content\kendo\bootstrap\slider-v.gif" />
     <Content Include="Content\kendo\bootstrap\sprite.png" />
     <Content Include="Content\kendo\bootstrap\sprite_2x.png" />
+    <Content Include="Content\kendo\kendo.blueopal.min.css" />
+    <Content Include="Content\kendo\kendo.blueopal.mobile.min.css" />
     <Content Include="Content\kendo\kendo.bootstrap-theme.css" />
     <Content Include="Content\kendo\kendo.bootstrap.min.css" />
     <Content Include="Content\kendo\kendo.bootstrap.mobile.min.css" />
@@ -271,6 +285,7 @@
     <Content Include="Content\kendo\kendo.common.core.min.css" />
     <Content Include="Content\kendo\kendo.common.min.css" />
     <Content Include="Content\kendo\kendo.custom.css" />
+    <Content Include="Content\kendo\kendo.dataviz.blueopal.min.css" />
     <Content Include="Content\kendo\kendo.rtl.min.css" />
     <Content Include="Content\new.css" />
     <Content Include="Content\samples.css" />
@@ -342,6 +357,8 @@
     <Content Include="Scripts\text.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\underscore.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -354,6 +371,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_splash.cshtml" />
     <Content Include="Scripts\toastr.min.js.map" />
+    <Content Include="Scripts\underscore-min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
