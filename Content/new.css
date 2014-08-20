@@ -30,6 +30,10 @@
     margin-bottom : 5px
 }
 
+hr {
+    color:black;
+}
+
 /* app */
 .splash {
     text-align: center;
@@ -132,7 +136,8 @@ div.status {
 
 .card .face {
     position:absolute;
-   min-height: 200px;
+    min-height: 800px;
+    min-width: 600px;
     
     -webkit-transition: .8s ease-in-out;
     -moz-transition: .8s ease-in-out;

@@ -1,0 +1,170 @@
+﻿<section class="section-margin">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="section-margin">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <a class="btn btn-primary" href="#">
+                                    <span class="fa fa-search"></span>
+                                </a>
+                            </span>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-table" data-bind="click: onClick_OpenDetails" title="Open Full Details Table"></i>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="table-responsive">
+
+                                <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+
+                                <script id="ListOfDealsTable-row-template" type="text/html">
+                                    <tr data-bind="event: { click: $parent.onClickRow }">
+                                        <td><span data-bind="text: id" /></td>
+                                        <td><span data-bind="text: BusinessType" /></td>
+                                        <td><span data-bind="text: Project" /></td>
+                                        <td><span data-bind="text: CorpSponsor" /></td>
+                                        <td><span data-bind="text: Tranche" /></td>
+                                        <td><span data-bind="text: Status" /></td>
+                                        <td><span data-bind="text: CCY" /></td>
+                                        <td><span data-bind="text: LocalCCYAmount" /></td>
+                                    </tr>
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+           
+
+                <div class="card">
+
+
+                    <div class="mywell front face">
+
+                        <div class="row">
+                            <div class="col-md-12"><h4><b>Detail View</b></h4></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Facility</h4></div>
+                            <div class="col-md-8">
+                                    <input type="text" data-bind="value: selectedRow().Facility" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Indent</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().Indent" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Seniority</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().Seniority" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Eco %</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().EcoPercent" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Exp $</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().ExpAmount" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Amount Syndicate</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().AmountSyndicate" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Exp Post Syndicate</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().ExpPostSyndicate" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Pro Forma Eco</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().ProFormaEco" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Pro Forma Amount</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().ProFormaAmount" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Value</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().Value" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>BridgeLimit</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().BridgeLimit" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><h4>Sponsor Limit</h4></div>
+                            <div class="col-md-8">
+                                <input type="text" data-bind="value: selectedRow().SponsorLimit" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"><hr /></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div data-bind="template: { name: templateNameFront, data: frontViewModel }"></div>
+                                <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>
+                                <button type="button" class="btn btn-success" data-bind="click: changeWidgetFront"><i class="fa fa-desktop"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mywell back face">
+
+                        <h4>More Details</h4>
+                        <div data-bind="template: { name: templateNameBack }"></div>
+                        <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>
+                        <button type="button" class="btn btn-success" data-bind="click: changeWidgetBack"><i class="fa fa-desktop"></i></button>
+
+                    </div>
+
+
+
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+</section>   
+
+
+

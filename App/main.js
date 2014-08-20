@@ -32,7 +32,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], f
 
    app.start().then(function() {
 
-       infuser.defaults.templateUrl = "app/views/widgets/";
+       infuser.defaults.templateUrl = "app/widgets/";
        //infuser.defaults.templateSuffix = "";
        //infuser.defaults.loadingTemplate.content = '<div class="val-loading-container val-loading-container-xs val-padding pull-left">'
        //                                                + '<div class="val-rotation-loading">'
@@ -46,6 +46,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], f
       viewLocator.useConvention();
 
       //Show the app by setting the root view model for our application with a transition.
-      app.setRoot('viewmodels/shell', 'entrance');
+       //app.setRoot('viewmodels/shell', 'entrance');
+       app.setRoot('shell', 'entrance');
    });
 });

@@ -1,33 +1,24 @@
 ﻿define(['plugins/router', 'knockout'], function (router, ko) {
-    var childRouter = router.createChildRouter()
-        .makeRelative({
-            moduleId: 'ko',
-            fromParent: true
-        }).map([
-            { route: ['', 'helloWorld'], moduleId: 'views/ko/helloWorld/index', title: 'Hello World', type: 'intro', nav: true },
-            { route: 'clickCounter', moduleId: 'views/ko/clickCounter/index', title: 'Click Counter', type: 'intro', nav: true },
-            { route: 'simpleList', moduleId: 'views/ko/simpleList/index', title: 'Simple List', type: 'intro', nav: true },
-            { route: 'betterList', moduleId: 'views/ko/betterList/index', title: 'Better List', type: 'intro', nav: true },
-            { route: 'controlTypes', moduleId: 'views/ko/controlTypes/index', title: 'Control Types', type: 'intro', nav: true },
-            { route: 'collections', moduleId: 'views/ko/collections/index', title: 'Collection', type: 'intro', nav: true },
-            { route: 'pagedGrid', moduleId: 'views/ko/pagedGrid/index', title: 'Paged Grid', type: 'intro', nav: true },
-            { route: 'animatedTrans', moduleId: 'views/ko/animatedTrans/index', title: 'Animated Transition', type: 'intro', nav: true },
-            { route: 'contactsEditor', moduleId: 'views/ko/contactsEditor/index', title: 'Contacts Editor', type: 'detailed', nav: true },
-            { route: 'gridEditor', moduleId: 'views/ko/gridEditor/index', title: 'Grid Editor', type: 'detailed', nav: true },
-            { route: 'shoppingCart', moduleId: 'views/ko/shoppingCart/index', title: 'Shopping Cart', type: 'detailed', nav: true }
-        ]).buildNavigationModel();
+    //var childRouter = router.createChildRouter()
+    //    .makeRelative({
+    //        //moduleId: 'inputWorkflow',
+    //        fromParent: true
+    //    }).map([
+    //        { route: ['', 'inputWorkflowHome'], moduleId: 'viewmodels/inputWorkflowHome', title: 'Start', type: 'intro', nav: true },
+    //        { route: 'teamSheets', moduleId: 'viewmodels/teamSheets', title: 'Team Sheets', type: 'intro', nav: true },
+    //        { route: 'addOrder', moduleId: 'viewmodels/addOrder', title: 'Add Order', type: 'intro', nav: true },
+    //        { route: 'masterBook', moduleId: 'viewmodels/masterBook', title: 'Master Book', type: 'intro', nav: true },
+    //        { route: 'tradeSubmission', moduleId: 'viewmodels/tradeSubmission', title: 'Trade Submission', type: 'intro', nav: true },
+    //        { route: 'salesCredits', moduleId: 'viewmodels/salesCredits', title: 'Sales Credits', type: 'intro', nav: true }
+    //    ]).buildNavigationModel();
 
-    return {
-        router: childRouter,
-        introSamples: ko.computed(function () {
-            return ko.utils.arrayFilter(childRouter.navigationModel(), function (route) {
-                return route.type == 'intro';
-            });
-        }),
-        detailedSamples: ko.computed(function () {
-            return ko.utils.arrayFilter(childRouter.navigationModel(), function (route) {
-                return route.type == 'detailed';
-            });
-        })
-    };
+    //return {
+    //    router: childRouter,
+    //    introSamples: ko.computed(function () {
+    //        return ko.utils.arrayFilter(childRouter.navigationModel(), function (route) {
+    //            return route.type == 'intro';
+    //        });
+    //    })
+        
+    //};
 });
