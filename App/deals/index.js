@@ -5,7 +5,7 @@
     vm.title = 'Home';
     vm.mykendo = kendo;
     vm.mykokendo = kokendo;
-    vm.templateNameFront = ko.observable('widget4');
+    vm.templateNameFront = ko.observable('widget1');
     vm.templateNameBack = 'widget2';
     vm.selectedRow = ko.observable('');
     vm.frontViewModel = ko.observable();
@@ -41,10 +41,10 @@
         vm.SetupKendoGrids();
 
         //if (vm.templateNameFront() == '') {
-        //    require(['widgets/widget1'], function (widget1) {
-        //        vm.frontViewModel(widget1);
-        //        vm.templateNameFront('widget1');
-        //    });
+            require(['widgets/widget1'], function (widget1) {
+                vm.frontViewModel(widget1);
+                vm.templateNameFront('widget1');
+            });
         //}
     };
 

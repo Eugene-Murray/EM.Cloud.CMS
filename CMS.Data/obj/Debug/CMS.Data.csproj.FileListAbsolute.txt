@@ -5,3 +5,10 @@ C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Models.pdb
 C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.csprojResolveAssemblyReference.cache
 C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.dll
 C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.pdb
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Data.dll
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Data.pdb
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Models.dll
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\bin\Debug\CMS.Models.pdb
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.csprojResolveAssemblyReference.cache
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.dll
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Data\obj\Debug\CMS.Data.pdb

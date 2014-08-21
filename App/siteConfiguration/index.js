@@ -5,7 +5,7 @@
     vm.router = router;
     vm.num = 0;
 
-    vm.addPage = function () {
+    vm.addTestPage = function () {
         var routes = vm.router.routes;
         vm.num++;
         vm.router.reset();
@@ -14,6 +14,21 @@
         vm.router.map(routes);
 
         vm.router.buildNavigationModel();
+
+        vm.router.navigationModel()[0].isActive(false);
+    };
+
+    vm.addTemplatePage = function () {
+        var routes = vm.router.routes;
+        vm.num++;
+        vm.router.reset();
+        routes.push({ route: 'templatePage' + vm.num, title: 'Template Page' + vm.num, moduleId: 'templatePage/index', nav: true });
+
+        vm.router.map(routes);
+
+        vm.router.buildNavigationModel();
+
+        vm.router.navigationModel()[0].isActive(false);
     };
 
     vm.changeTemplate4 = function () {

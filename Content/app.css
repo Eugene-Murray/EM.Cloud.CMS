@@ -30,8 +30,18 @@
     margin-bottom : 5px
 }
 
+.input-margin {
+    margin-bottom : 5px
+}
+
+.margin-bottom {
+    margin-bottom : 5px
+}
+
 hr {
-    color:black;
+    color: #a1a1a1;
+    background-color: #a1a1a1;
+    height: 2px;
 }
 
 /* app */

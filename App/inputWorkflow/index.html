@@ -2,17 +2,42 @@
     <div>
         <div class="col-md-2">
             <ul class="well nav nav-pills nav-stacked">
-                <li class="nav-header">Workflow Stage</li>
+                <li class="nav-header"><b>Input Workflow Stages</b></li>
 
-                <!--ko foreach: introSamples-->
+                <!--ko foreach: inputScreens -->
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash }, text: title"></a>
                 </li>
                 <!--/ko-->
+
+                <li class="nav-header"><b>Process Complete</b></li>
+
+
+                <!--ko foreach: processCompleteScreens -->
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, text: title"></a>
+                </li>
+                <!--/ko-->
+
             </ul>
         </div>
-        <div class="col-md-10" style="padding: 0">
-            <!--ko router: { transition:'entrance', cacheViews:false }--><!--/ko-->
+        
+        <div class="col-md-10" >
+
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default btn-xs pull-left margin-bottom" data-bind="click: onClick_Back, visible: showBackButton">Back <i class="fa fa-chevron-left"></i>  </button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default btn-xs pull-right margin-bottom" data-bind="click: onClick_Forward, visible: showForwardButton"><i class="fa fa-chevron-right"></i> Next </button>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!--ko router: { transition:'entrance', cacheViews:false }--><!--/ko-->
+                </div>
+            </div>
+           
         </div>
     </div>
 </section>

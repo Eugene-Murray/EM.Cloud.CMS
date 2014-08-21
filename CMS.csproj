@@ -133,6 +133,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App\helpers.js" />
+    <Content Include="App\inputWorkflow\processComplete\index.html" />
+    <Content Include="App\inputWorkflow\processComplete\index.js" />
     <Content Include="App\main.js" />
     <Content Include="App\mockData\inputWorkFlow.js" />
     <Content Include="App\models\card.js" />
@@ -144,10 +146,8 @@
     <Content Include="App\shell.js" />
     <Content Include="App\templatePage\index.html" />
     <Content Include="App\templatePage\index.js" />
-    <Content Include="App\viewmodels\inputWorkflow.js" />
     <Content Include="App\About\about2.js" />
     <Content Include="App\About\about.js" />
-    <Content Include="App\viewmodels\card.js" />
     <Content Include="App\deals\detail.js" />
     <Content Include="App\inputWorkflow\addOrder\index.js" />
     <Content Include="App\inputWorkflow\masterBook\index.js" />
@@ -173,7 +173,6 @@
     <Content Include="App\widgets\widget7.js" />
     <Content Include="App\widgets\widget6.js" />
     <Content Include="App\widgets\widget1.js" />
-    <Content Include="App\views\inputWorkflow.html" />
     <Content Include="App\About\about2.html" />
     <Content Include="App\deals\detail.html" />
     <Content Include="App\inputWorkflow\addOrder\index.html" />
@@ -181,18 +180,9 @@
     <Content Include="App\inputWorkflow\tradeSubmission\index.html" />
     <Content Include="App\inputWorkflow\salesCredits\index.html" />
     <Content Include="App\inputWorkflow\teamSheets\index.html" />
-    <Content Include="App\views\page.html" />
     <Content Include="App\siteConfiguration\index.html" />
     <Content Include="App\deals\index.html" />
-    <Content Include="App\views\card.html" />
-    <Content Include="App\viewmodels\cards.js" />
-    <Content Include="App\viewmodels\catalog.js" />
-    <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\About\about.html" />
-    <Content Include="App\views\cards.html" />
-    <Content Include="App\views\catalog.html" />
-    <Content Include="App\views\navBar.html" />
-    <Content Include="App\views\shell.html" />
     <Content Include="App\views\pageStructureTemplates\10Section-PageStructureTemplate.html" />
     <Content Include="App\views\pageStructureTemplates\9Section-PageStructureTemplate.html" />
     <Content Include="App\views\pageStructureTemplates\7Section-PageStructureTemplate.html" />
@@ -215,13 +205,11 @@
     <Content Include="App\widgets\widget3.html" />
     <Content Include="App\widgets\widget2.html" />
     <Content Include="App\widgets\widget1.html" />
-    <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\durandal.css" />
-    <Content Include="Content\cms.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\ie10mobile.css" />
@@ -271,9 +259,7 @@
     <Content Include="Content\kendo\kendo.custom.css" />
     <Content Include="Content\kendo\kendo.dataviz.blueopal.min.css" />
     <Content Include="Content\kendo\kendo.rtl.min.css" />
-    <Content Include="Content\new.css" />
-    <Content Include="Content\samples.css" />
-    <Content Include="Content\starterkit.css" />
+    <Content Include="Content\app.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -358,8 +344,6 @@
     <Content Include="Scripts\underscore-min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\viewmodels\inputWorkflow\" />
-    <Folder Include="App\viewmodels\widgets\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Properties\PublishProfiles\" />
@@ -399,7 +383,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>65319</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4000</IISUrl>
+          <IISUrl>http://localhost:4001</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

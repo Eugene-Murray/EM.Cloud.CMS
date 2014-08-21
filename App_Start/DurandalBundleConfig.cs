@@ -33,7 +33,7 @@ namespace CMS
              .Include("~/Content/font-awesome.min.css")
              .Include("~/Content/toastr.css")
              .Include("~/Content/durandal.css")
-             .Include("~/Content/new.css")
+             .Include("~/Content/app.css")
 
          
              .Include("~/content/kendo/kendo.common.min.css")
@@ -42,28 +42,6 @@ namespace CMS
 
              //.Include("~/content/kendo/kendo.common-bootstrap.min.css")
              //.Include("~/content/kendo/kendo.bootstrap.min.css")
-
-             
-
-             //.Include("~/content/kendo/kendo.common.min.css")
-             //"~/content/kendo/kendo.rtl.min.css"
-             
-             //.Include("~/content/kendo/kendo.bootstrap.min.css")
-
-            //.Include("~/content/kendo/kendo.common.min.css")
-            //.Include("~/content/kendo/kendo.rtl.min.css")
-            
-            //.Include("~/content/kendo/kendo.bootstrap-theme.css")
-            //.Include("~/content/kendo/kendo.custom.css")
-
-            
-
-             //"~/content/kendo/kendo.dataviz.blueopal.css",
-             //   "~/content/kendo/kendo.common.min.css",
-             //   "~/content/kendo/kendo.rtl.min.css",
-             //   "~/content/kendo/kendo.bootstrap.min.css",
-             //   "~/content/kendo/kendo.bootstrap-theme.css",
-             //   "~/content/kendo/kendo.custom.css"
              
            );
       }
