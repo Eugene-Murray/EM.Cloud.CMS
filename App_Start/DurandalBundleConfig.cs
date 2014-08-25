@@ -18,9 +18,9 @@ namespace CMS
              .Include("~/Scripts/kendo/kendo.web.js")
              .Include("~/Scripts/knockout-{version}.js")
              .Include("~/Scripts/knockout-kendo.js")
-             .Include("~/Scripts/external/infuser.js")
-             .Include("~/Scripts/external/trafficcop.js")
-             .Include("~/Scripts/external/koexternaltemplateengine.js")
+             .Include("~/Scripts/KO-External-Temp-Engine/infuser.js")
+             .Include("~/Scripts/KO-External-Temp-Engine/trafficcop.js")
+             .Include("~/Scripts/KO-External-Temp-Engine/koexternaltemplateengine.js")
              .Include("~/Scripts/toastr.js")
              .Include("~/Scripts/underscore.js")
           );
