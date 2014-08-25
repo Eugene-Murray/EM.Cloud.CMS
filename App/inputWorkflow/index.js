@@ -8,8 +8,8 @@
                 moduleId: 'inputWorkflow',
                 fromParent: true
             }).map([
-                { route: '', moduleId: 'teamSheets/index', title: 'Team Sheets', type: 'input' },
-                { route: 'teamSheets', moduleId: 'teamSheets/index', title: 'Team Sheets', type: 'input', nav: true },
+                { route: '', moduleId: 'termSheets/index', title: 'Team Sheets', type: 'input' },
+                { route: 'termSheets', moduleId: 'termSheets/index', title: 'Term Sheets', type: 'input', nav: true },
                 { route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', type: 'input', nav: true },
                 { route: 'masterBook', moduleId: 'masterBook/index', title: 'Master Book', type: 'input', nav: true },
                 { route: 'tradeSubmission', moduleId: 'tradeSubmission/index', title: 'Trade Submission', type: 'input', nav: true },
