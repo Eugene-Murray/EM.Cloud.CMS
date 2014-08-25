@@ -1573,6 +1573,23 @@
     <Content Include="WrapStrap\SuperAdmin\profile-page.html" />
     <Content Include="WrapStrap\SuperAdmin\tables.html" />
     <Content Include="WrapStrap\SuperAdmin\typography.html" />
+    <Content Include="WrapStrap\tabs\backup\Copy of preview-tabbed-form.html" />
+    <Content Include="WrapStrap\tabs\bgs\n1.png" />
+    <Content Include="WrapStrap\tabs\css\n1.png" />
+    <Content Include="WrapStrap\tabs\css\preview.css" />
+    <Content Include="WrapStrap\tabs\css\preview.min.css" />
+    <Content Include="WrapStrap\tabs\index.html" />
+    <Content Include="WrapStrap\tabs\scripts\bootstrap.min.js" />
+    <Content Include="WrapStrap\tabs\scripts\jquery-1.9.1.min.js" />
+    <Content Include="WrapStrap\tabs\scripts\jquery.easing.1.3.js" />
+    <Content Include="WrapStrap\tabs\scripts\jquery.transit.min.js" />
+    <Content Include="WrapStrap\tabs\scripts\tabs-addon.js" />
+    <Content Include="WrapStrap\tabs\styles\bootstrap-responsive.min.css" />
+    <Content Include="WrapStrap\tabs\styles\bootstrap.min.css" />
+    <Content Include="WrapStrap\tabs\styles\font-awesome-ie7.min.css" />
+    <Content Include="WrapStrap\tabs\styles\font-awesome.min.css" />
+    <Content Include="WrapStrap\tabs\styles\font\fontawesome-webfont.svg" />
+    <Content Include="WrapStrap\tabs\track-url-demo.html" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1963,6 +1980,12 @@
     <Content Include="WrapStrap\macadmin\fonts\FontAwesome.otf" />
     <Content Include="WrapStrap\spacelab\bootswatch.less" />
     <Content Include="WrapStrap\spacelab\variables.less" />
+    <Content Include="WrapStrap\tabs\preview.less" />
+    <Content Include="WrapStrap\tabs\scripts\jquery-1.9.1.min.map" />
+    <Content Include="WrapStrap\tabs\styles\font\fontawesome-webfont.eot" />
+    <Content Include="WrapStrap\tabs\styles\font\fontawesome-webfont.ttf" />
+    <Content Include="WrapStrap\tabs\styles\font\fontawesome-webfont.woff" />
+    <Content Include="WrapStrap\tabs\styles\font\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
