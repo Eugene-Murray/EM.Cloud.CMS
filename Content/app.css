@@ -26,6 +26,29 @@
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
+.mywell-large {
+  min-height: 200px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #daecf4;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.mywell-large-white {
+  min-height: 1000px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+
 .section-margin {
     margin-bottom : 5px
 }
@@ -42,6 +65,12 @@ hr {
     color: #a1a1a1;
     background-color: #a1a1a1;
     height: 2px;
+}
+
+.val-scroll,
+.val-scroll .k-grid-content {
+	overflow: auto !important;
+	white-space: nowrap;
 }
 
 /* app */
@@ -146,8 +175,9 @@ div.status {
 
 .card .face {
     position:absolute;
+    /*position:fixed;*/
     min-height: 800px;
-    min-width: 600px;
+    min-width: 400px;
     
     -webkit-transition: .8s ease-in-out;
     -moz-transition: .8s ease-in-out;
@@ -190,4 +220,5 @@ div.status {
 /*section {
     margin: 0 20px;
 }*/
+
 

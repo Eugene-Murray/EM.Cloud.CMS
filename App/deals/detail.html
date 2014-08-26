@@ -21,7 +21,7 @@
                                 
                             <i class="fa fa-arrow-left" data-bind="click: onClick_Back" title="Back"></i>
                             
-                            <i class="fa fa-cog" data-bind="click: onClick_UserGridConfig" title="User Settings"></i>
+                            <i class="fa fa-cog" data-bind="click: onClick_UserGridConfig" data-toggle="tooltip" data-plcement="top" title="User Settings"></i>
                                 </div>
 
                         <div class="panel-body">
@@ -55,7 +55,9 @@
 
                                 </section>
                             <!--</div>-->
-                            <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+                            <div class="val-scroll">
+                                <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+                            </div>
                             <script id="ListOfDealsTable-row-template" type="text/html">
                                 <tr data-bind="event: { click: $parent.onClickRow }">
                                     <td><span data-bind="text: id" /></td>

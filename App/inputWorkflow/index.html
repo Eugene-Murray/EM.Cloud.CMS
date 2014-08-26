@@ -2,7 +2,7 @@
     <div>
         <div class="col-md-2">
             <ul class="well nav nav-pills nav-stacked">
-                <li class="nav-header"><b>Input Workflow Stages</b></li>
+                <li class="nav-header"><h4><b><i class="fa fa-file-text-o"></i> Input Workflow Stages</b></h4></li>
 
                 <!--ko foreach: inputScreens -->
                 <li data-bind="css: { active: isActive }">
@@ -10,12 +10,12 @@
                 </li>
                 <!--/ko-->
 
-                <li class="nav-header"><b>Process Complete</b></li>
+                <li class="nav-header"><h4><b> <i class="fa fa-flag-checkered"></i> Process Complete</b></h4></li>
 
 
                 <!--ko foreach: processCompleteScreens -->
                 <li data-bind="css: { active: isActive }">
-                    <a data-bind="attr: { href: hash }, text: title"></a>
+                     <a data-bind="attr: { href: hash }, text: title"></a>
                 </li>
                 <!--/ko-->
 

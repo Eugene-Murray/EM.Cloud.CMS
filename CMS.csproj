@@ -207,6 +207,8 @@
     <Content Include="App\widgets\widget1.html" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
+    <Content Include="Content\bootstrap-branded.css" />
+    <Content Include="Content\bootstrap-custom.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -272,6 +274,7 @@
     <Content Include="Content\kendo\kendo.common.min.css" />
     <Content Include="Content\kendo\kendo.custom.css" />
     <Content Include="Content\kendo\kendo.dataviz.blueopal.min.css" />
+    <Content Include="Content\kendo\kendo.dataviz.bootstrap.min.css" />
     <Content Include="Content\kendo\kendo.rtl.min.css" />
     <Content Include="Content\app.css" />
     <Content Include="Content\toastr.css" />

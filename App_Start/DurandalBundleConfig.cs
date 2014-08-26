@@ -28,20 +28,32 @@ namespace CMS
          bundles.Add(
            new StyleBundle("~/Content/css")
              .Include("~/Content/ie10mobile.css")
-             .Include("~/Content/bootstrap.css")
-             .Include("~/Content/bootstrap-theme.min.css")
+             //.Include("~/Content/bootstrap.css")
+             //.Include("~/Content/bootstrap-theme.min.css")
              .Include("~/Content/font-awesome.min.css")
+
+             .Include("~/Content/bootstrap-branded.css")
+			 .Include("~/Content/bootstrap-custom.css")
+             .Include("~/Content/animate.css")
              .Include("~/Content/toastr.css")
              .Include("~/Content/durandal.css")
+
              .Include("~/Content/app.css")
 
          
-             .Include("~/content/kendo/kendo.common.min.css")
-             //.Include("~/content/kendo/kendo.common.core.min.css")
-             .Include("~/Content/kendo/kendo.blueopal.min.css")
+             //.Include("~/content/kendo/kendo.common.min.css")
+             ////.Include("~/content/kendo/kendo.common.core.min.css")
+             ////.Include("~/Content/kendo/kendo.blueopal.min.css")
 
              //.Include("~/content/kendo/kendo.common-bootstrap.min.css")
              //.Include("~/content/kendo/kendo.bootstrap.min.css")
+             .Include("~/content/kendo/kendo.dataviz.bootstrap.min.css")
+             .Include("~/content/kendo/kendo.common.min.css")
+			//.Include("~/content/kendo/kendo.rtl.min.css")
+            .Include("~/content/kendo/kendo.dataviz.bootstrap.min.css")
+			.Include("~/content/kendo/kendo.bootstrap.min.css")
+			.Include("~/content/kendo/kendo.bootstrap-theme.css")
+            .Include("~/content/kendo/kendo.custom.css")
              
            );
       }
