@@ -6,7 +6,7 @@
     vm.mykendo = kendo;
     vm.mykokendo = kokendo;
     vm.templateNameFront = ko.observable('widget1');
-    vm.templateNameBack = 'widget2';
+    vm.templateNameBack = 'widget3';
     vm.selectedRow = ko.observable('');
     vm.frontViewModel = ko.observable();
     
