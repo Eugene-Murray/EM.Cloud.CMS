@@ -14,15 +14,17 @@ namespace CMS
           new ScriptBundle("~/Scripts/vendor")
              .Include("~/Scripts/jquery-{version}.js")
              .Include("~/Scripts/bootstrap.js")
-             .Include("~/Scripts/kendo/kendo.all.js")
-             .Include("~/Scripts/kendo/kendo.web.js")
+             
+             //.Include("~/Scripts/kendo/kendo.web.js")
              .Include("~/Scripts/knockout-{version}.js")
-             .Include("~/Scripts/knockout-kendo.js")
+             
              .Include("~/Scripts/KO-External-Temp-Engine/infuser.js")
              .Include("~/Scripts/KO-External-Temp-Engine/trafficcop.js")
              .Include("~/Scripts/KO-External-Temp-Engine/koexternaltemplateengine.js")
              .Include("~/Scripts/toastr.js")
              .Include("~/Scripts/underscore.js")
+             .Include("~/Scripts/kendo/kendo.all.js")
+             .Include("~/Scripts/knockout-kendo.js")
           );
 
          bundles.Add(
@@ -47,13 +49,16 @@ namespace CMS
 
              //.Include("~/content/kendo/kendo.common-bootstrap.min.css")
              //.Include("~/content/kendo/kendo.bootstrap.min.css")
-             .Include("~/content/kendo/kendo.dataviz.bootstrap.min.css")
-             .Include("~/content/kendo/kendo.common.min.css")
-			//.Include("~/content/kendo/kendo.rtl.min.css")
-            .Include("~/content/kendo/kendo.dataviz.bootstrap.min.css")
-			.Include("~/content/kendo/kendo.bootstrap.min.css")
-			.Include("~/content/kendo/kendo.bootstrap-theme.css")
-            .Include("~/content/kendo/kendo.custom.css")
+             //.Include("~/content/kendo/kendo.dataviz.bootstrap.min.css")
+            
+            .Include("~/Content/kendo/kendo.common.min.css")
+			.Include("~/Content/kendo/kendo.rtl.min.css")
+			.Include("~/Content/kendo/kendo.bootstrap.min.css")
+			.Include("~/Content/kendo/kendo.bootstrap-theme.css")
+            .Include("~/Content/kendo/kendo.custom.css")
+
+            .Include("~/Content/kendo/kendo.dataviz.min.css")
+            .Include("~/Content/kendo/kendo.dataviz.blueopal.min.css")
              
            );
       }

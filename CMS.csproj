@@ -149,7 +149,7 @@
     <Content Include="App\About\about2.js" />
     <Content Include="App\About\about.js" />
     <Content Include="App\deals\detail.js" />
-    <Content Include="App\inputWorkflow\addOrder\index.js" />
+    <Content Include="App\addOrder\index.js" />
     <Content Include="App\inputWorkflow\masterBook\index.js" />
     <Content Include="App\inputWorkflow\salesCredits\index.js" />
     <Content Include="App\inputWorkflow\tradeSubmission\index.js" />
@@ -175,7 +175,7 @@
     <Content Include="App\widgets\widget1.js" />
     <Content Include="App\About\about2.html" />
     <Content Include="App\deals\detail.html" />
-    <Content Include="App\inputWorkflow\addOrder\index.html" />
+    <Content Include="App\addOrder\index.html" />
     <Content Include="App\inputWorkflow\masterBook\index.html" />
     <Content Include="App\inputWorkflow\tradeSubmission\index.html" />
     <Content Include="App\inputWorkflow\salesCredits\index.html" />
@@ -239,6 +239,7 @@
     <Content Include="Content\BlueOpal\slider-v.gif" />
     <Content Include="Content\BlueOpal\sprite.png" />
     <Content Include="Content\BlueOpal\sprite_2x.png" />
+    <Content Include="Content\kendo\kendo.dataviz.min.css" />
     <Content Include="Content\kendo\BlueOpal\editor.png" />
     <Content Include="Content\kendo\BlueOpal\imagebrowser.png" />
     <Content Include="Content\kendo\BlueOpal\indeterminate.gif" />

@@ -8,6 +8,7 @@
            return router.map([
               { route: ['home', ''], title: 'Home', moduleId: 'templatePage/index', nav: true },
               { route: 'listOfDeals', title: 'Deals', moduleId: 'deals/index', nav: true },
+              { route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', nav: true },
               { route: 'details', title: 'List Of Deals - Details', moduleId: 'deals/detail', nav: false },
               { route: 'inputWorkflow*details', title: 'Workflow', moduleId: 'inputWorkflow/index', nav: true, hash: '#inputWorkflow' },
               { route: 'siteConfiguration', title: 'Site Configuration', moduleId: 'siteConfiguration/index', nav: false },

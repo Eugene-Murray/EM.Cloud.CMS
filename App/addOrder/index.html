@@ -1,0 +1,358 @@
+﻿<div class="mywell-large-white well-large">
+    <!--<div class="row">
+        <div class="col-md-12">
+            <span data-bind="text: title"></span>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- Input -->
+
+                    <div data-bind="visible: investorVisible">
+                        <div class="mywell" id="investor">
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>
+                                        <span class="label label-success">
+                                            INVESTOR
+                                        </span>
+                                    </h4>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Investor</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" data-bind="kendoAutoComplete: {data: investorList, value: selectedInvestor }"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Indent</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Seniority</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Eco %</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Exp $</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Amount Syndicate</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Exp Post Syndicate</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Pro Forma Eco</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Pro Forma Amount</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Value</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">BridgeLimit</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 input-margin">Sponsor Limit</div>
+                                <div class="col-md-8 input-margin">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-success" data-bind="click: toGeneral"><i class="fa fa-arrow-right"></i> Next</button>
+                            </div>
+                            <br />
+
+
+                        </div>
+                    </div>
+
+                    <div data-bind="visible: generalVisible">
+                        <div class="mywell" id="general" data-bind="visible: generalVisible">
+                            general
+
+                            <br />
+                            <div class="pull-left">
+                                <button type="button" class="btn btn-success" data-bind="click: toInvestor"><i class="fa fa-arrow-left"></i> Back</button>
+                            </div>
+                            <div class="pull-right">
+                                <button type="button" class="btn btn-success" data-bind="click: toAmounts"><i class="fa fa-arrow-right"></i> Next</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div data-bind="visible: generalAmounts">
+                        <div class="mywell" id="general" data-bind="visible: generalVisible">amounts</div>
+                        <!--<div class="pull-left">
+                            <button type="button" class="btn btn-success" data-bind="click: toInvestor"><i class="fa fa-arrow-left"></i> Back</button>
+                        </div>
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-success" data-bind="click: toAmounts"><i class="fa fa-arrow-right"></i> Next</button>
+                        </div>-->
+                    </div>
+
+
+
+
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-primary" data-bind="click: save"><i class="fa fa-floppy-o"></i> Save</button>
+                    </div>
+
+
+                    <!-- ..Input -->
+                </div>
+                <div class="col-md-7">
+                    <!-- Tabs -->
+                    <div class="tabbable tabs-right">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#Details" data-toggle="tab">
+                                    <!--<i class="fa fa-university"></i>-->
+                                    <i class="fa fa-credit-card"></i>
+                                    Details
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#Composition-Structure" data-toggle="tab">
+                                    <i class="fa fa-bullseye"></i>
+                                    Composition & Structure
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Richness-Cheapness-Line" data-toggle="tab">
+                                    <i class="fa fa-random"></i>
+                                    Richness / Cheapness
+                                </a>
+                            </li>
+                            <li class="val-worldcheck-link">
+                                <a href="#Richness-Cheapness-Bar" data-toggle="tab">
+                                    <i class="fa fa-bars"></i>
+                                    Richness / Cheapness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#LatestBookUpdates" data-toggle="tab">
+                                    <i class="fa fa-book"></i>
+                                    Latest Book Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#OutstandingTasks" data-toggle="tab">
+                                    <i class="fa fa-tasks"></i>
+                                    Outstanding Tasks
+                                </a>
+
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Details">
+
+                                <h4>
+                                    <span class="label label-success">
+                                        DETAILS
+                                    </span>
+                                </h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-danger">DEAL ICI</li>
+                                    <li class="list-group-item list-group-item-warning">Tranche 5yr <span class="badge">3.25%</span></li>
+                                    <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                                    <li class="list-group-item list-group-item-warning">Tranche 3yr <span class="badge">2.25%</span></li>
+                                    <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                                    <li class="list-group-item list-group-item-warning">Tranche 7yr <span class="badge">4.25%</span></li>
+                                    <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                                    <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                                </ul>
+
+
+                            </div>
+                            <div class="tab-pane" id="Composition-Structure">
+                                <h4>
+                                    <span class="label label-success">
+                                        Composition & Structure
+                                    </span>
+                                </h4>
+
+                                <div id="pieChart"></div>
+
+                                <!--<div data-bind="kendoChart: {data: items, series: [{name: 'Deals', field: 'value'}]}" style="width: 500px"></div>-->
+                            </div>
+                            <div class="tab-pane" id="Richness-Cheapness-Line">
+                                
+                                <h4>
+                                    <span class="label label-success">
+                                        Richness / Cheapness
+                                    </span>
+                                </h4>
+
+                                <div id="lineChart"></div>
+                            </div>
+                            <div class="tab-pane" id="Richness-Cheapness-Bar">
+                                <h4>
+                                    <span class="label label-success">
+                                        Richness / Cheapness
+                                    </span>
+                                </h4>
+
+                                <div id="barChart"></div> 
+                            </div>
+                            <div class="tab-pane" id="LatestBookUpdates">
+                                
+                                <h4>
+                                    <span class="label label-success">
+                                        Latest Book Updates
+                                    </span>
+                                </h4>
+
+                                <div class="val-scroll">
+                                    <table class="table table-hover" data-bind="kendoGrid: LatestBookUpdatesTable"></table>
+                                </div>
+                                <script id="LatestBookUpdatesTable-row-template" type="text/html">
+                                    <tr>
+                                        <td><span data-bind="text: Update" /></td>
+                                        <td><span data-bind="text: Time" /></td>
+                                    </tr>
+                                </script>
+
+                            </div>
+                            <div class="tab-pane" id="OutstandingTasks">
+                                <h4>
+                                    <span class="label label-success">
+                                        Outstanding Tasks
+                                    </span>
+                                </h4>
+
+                                <div class="val-scroll">
+                                    <table class="table table-hover" data-bind="kendoGrid: OutstandingTasksTable"></table>
+                                </div>
+                                <script id="OutstandingTasksTable-row-template" type="text/html">
+                                    <tr>
+                                        <td><span data-bind="text: OpenTask" /></td>
+                                        <td><input type="checkbox" data-bind="checked: Done" /></td>
+                                    </tr>
+                                </script>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ..Tabs -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="val-scroll">
+                <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+            </div>
+            <script id="ListOfDealsTable-row-template" type="text/html">
+                <tr>
+                    <td><span data-bind="text: id" /></td>
+                    <td><span data-bind="text: BusinessType" /></td>
+                    <td><span data-bind="text: Project" /></td>
+                    <td><span data-bind="text: CorpSponsor" /></td>
+                    <td><span data-bind="text: Tranche" /></td>
+                    <td><span data-bind="text: Status" /></td>
+                    <td><span data-bind="text: CCY" /></td>
+                    <td><span data-bind="text: LocalCCYAmount" /></td>
+                    <td><span data-bind="text: Amt" /></td>
+                    <td><span data-bind="text: Facility" /></td>
+                    <td>
+                        <span data-bind="text: Indent" />
+                    </td>
+                    <td>
+                        <span data-bind="text: Seniority" />
+                    </td>
+                    <td>
+                        <span data-bind="text: EcoPercent" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ExpAmount" />
+                    </td>
+                    <td>
+                        <span data-bind="text: AmountSyndicate" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ExpPostSyndicate" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ProFormaEco" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ProFormaAmount" />
+                    </td>
+                    <td>
+                        <span data-bind="text: Value" />
+                    </td>
+
+                    <td>
+                        <span data-bind="text: BridgeLimit" />
+                    </td>
+                    <td>
+                        <span data-bind="text: SponsorLimit" />
+                    </td>
+                </tr>
+            </script>
+
+        </div>
+    </div>
+</div>

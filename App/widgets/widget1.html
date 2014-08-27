@@ -5,9 +5,35 @@
 
            
             <center>
-                <div data-bind="kendoChart: {data: items, series: [{name: 'deal', field: 'value'}]}" style="width: auto"></div>
+                <!--<div data-bind="kendoChart: {data: items, series: [{name: 'deal', field: 'value'}]}" style="width: auto"></div>-->
+                <div id="lineChart"></div>
             </center>
-            <!--<img src="http://localhost:4000/Content/images/widget1.png" height="300" width="300" />-->
+
+            <!--<br />
+            <hr />
+            <br />
+
+
+            <div class="table-responsive">
+
+                <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+
+                <script id="ListOfDealsTable-row-template" type="text/html">
+                    <tr data-bind="event: { click: $parent.onClickRow }">
+                        <td><span data-bind="text: id" /></td>
+                        <td><span data-bind="text: BusinessType" /></td>
+                        <td><span data-bind="text: Project" /></td>
+                        <td><span data-bind="text: CorpSponsor" /></td>
+                        <td><span data-bind="text: Tranche" /></td>
+                        <td><span data-bind="text: Status" /></td>
+                        <td><span data-bind="text: CCY" /></td>
+                        <td><span data-bind="text: LocalCCYAmount" /></td>
+                    </tr>
+                </script>
+
+            </div>-->
+
+            
         </div>
     </div>
 </div>
