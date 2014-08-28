@@ -139,9 +139,10 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <!--<div data-bind="template: { name: templateNameFront, data: frontViewModel }"></div>-->
                                 <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>
-                                <!--<button type="button" class="btn btn-success" data-bind="click: changeWidgetFront"><i class="fa fa-desktop"></i></button>-->
+                                <button type="button" class="btn btn-success" data-bind="click: changeWidgetFront"><i class="fa fa-desktop"></i></button>
+                                <div data-bind="template: { name: templateNameFront, data: frontViewModel, afterRender: frontAfterRenderFunction }"></div>
+                                
                             </div>
                         </div>
 
@@ -149,9 +150,10 @@
                     <div class="mywell back face">
 
                         <h4>More Details</h4>
-                        <!--<div data-bind="template: { name: templateNameBack }"></div>-->
                         <button type="button" class="btn btn-primary" data-bind="click: flip"><i class="fa fa-arrows-h"></i></button>
-                        <!--<button type="button" class="btn btn-success" data-bind="click: changeWidgetBack"><i class="fa fa-desktop"></i></button>-->
+                        <button type="button" class="btn btn-success" data-bind="click: changeWidgetBack"><i class="fa fa-desktop"></i></button>
+                        <div data-bind="template: { name: templateNameBack }"></div>
+                        
 
                     </div>
 

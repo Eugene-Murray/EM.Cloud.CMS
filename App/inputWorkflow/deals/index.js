@@ -1,14 +1,15 @@
-﻿define(['durandal/system', 'knockout',  'plugins/router', 'kendo', 'kokendo', 'require'], function (system, ko, router, kendo, kokendo, require) {
+﻿//define(['durandal/system', 'knockout',  'plugins/router', 'kendo', 'kokendo', 'require'], function (system, ko, router, kendo, kokendo, require) {
+
+define(['durandal/system', 'knockout', 'plugins/router', 'require'], function (system, ko, router, require) {
     //debugger;
     var vm = {};
     
     vm.title = 'Home';
-    vm.mykendo = kendo;
-    vm.mykokendo = kokendo;
-    //vm.templateNameFront = ko.observable('widget4');
-    //vm.templateNameBack = 'widget3';
+    vm.templateNameFront = ko.observable('widget1');
+    vm.templateNameBack = 'widget3';
     vm.selectedRow = ko.observable('');
     vm.frontViewModel = ko.observable();
+    vm.frontAfterRenderFunction = null;
     
     vm.listOfDeals = ko.observableArray([]);
 
@@ -19,10 +20,11 @@
         vm.SetupKendoGrids();
 
         //if (vm.templateNameFront() == '') {
-            //require(['widgets/widget4'], function (widget4) {
-            //    vm.frontViewModel(widget4);
-            //    vm.templateNameFront('widget4');
-            //});
+            require(['widgets/widget1'], function (widget1) {
+                vm.frontViewModel(widget1);
+                vm.templateNameFront('widget1');
+                vm.frontAfterRenderFunction = widget1.attached;
+            });
         //}
 
         vm.listOfDeals([
@@ -62,14 +64,14 @@
         $('.card').toggleClass('flip');
     };
 
-    //vm.changeWidgetFront = function () {
-    //    //if (vm.templateNameFront == ''widget')
-    //    vm.templateNameFront('widget5');
-    //};
+    vm.changeWidgetFront = function () {
+        //if (vm.templateNameFront == ''widget')
+        vm.templateNameFront('widget5');
+    };
 
-    //vm.changeWidgetBack = function () {
-    //    vm.templateNameBack = 'widget12';
-    //};
+    vm.changeWidgetBack = function () {
+        vm.templateNameBack = 'widget12';
+    };
 
     vm.onClickRow = function () {
         vm.selectedRow(this);
@@ -78,7 +80,7 @@
     };
 
     vm.onClick_OpenDetails = function () {
-        router.navigate('#details');
+        router.navigate('#inputWorkflow/details');
     };
 
     vm.SetupKendoGrids = function () {
@@ -110,28 +112,7 @@
             useKOTemplates: true
         };
 
-        //self.TeamLinksListTable = {
-        //    data: self.teamLinksList,
-        //    columns: [
-        //        { field: "Title", title: "Title" },
-        //        { field: "Url", title: "Url" },
-        //        { field: "Category", title: "Category" }
-        //    ],
-        //    pageable:
-        //    {
-        //        pageSize: 5,
-        //        messages: { display: "{0:#,###0} - {1:#,###0} of {2:#,###0} items" },
-        //        buttonCount: 5
-        //    },
-        //    sortable: false,
-        //    scrollable: false,
-        //    selectable: true,
-        //    reorderable: false,
-        //    serverFiltering: false,
-        //    rowTemplate: 'TeamLinksListTable-row-template',
-        //    altRowTemplate: 'TeamLinksListTable-row-template',
-        //    useKOTemplates: true
-        //};
+        
     };
 
     return vm;

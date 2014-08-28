@@ -8,14 +8,15 @@
                 moduleId: 'inputWorkflow',
                 fromParent: true
             }).map([
-                //{ route: '', moduleId: 'termSheets/index', title: 'Team Sheets', type: 'input' },
+                { route: ['listOfDeals', ''], title: 'Deals', moduleId: 'deals/index', type: 'input', nav: true },
+                //{ route: 'listOfDeals', title: 'Deals', moduleId: 'deals/index', type: 'input', nav: true },
+                { route: 'details', title: 'List Of Deals - Details', moduleId: 'deals/detail', type: 'input', nav: false },
                 { route: 'termSheets', moduleId: 'termSheets/index', title: 'Term Sheets', type: 'input', nav: true },
-                //{ route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', type: 'input', nav: true },
                 { route: 'masterBook', moduleId: 'masterBook/index', title: 'Master Book', type: 'input', nav: true },
                 { route: 'tradeSubmission', moduleId: 'tradeSubmission/index', title: 'Trade Submission', type: 'input', nav: true },
-                { route: 'salesCredits', moduleId: 'salesCredits/index', title: 'Sales Credits', type: 'input', nav: true },
-                { route: 'processComplete', moduleId: 'processComplete/index', title: 'Complete', type: 'processComplete', nav: true }
+                { route: 'salesCredits', moduleId: 'salesCredits/index', title: 'Sales Credits', type: 'processComplete', nav: true }
             ]).buildNavigationModel();
+             
 
 
     var activate = function () {

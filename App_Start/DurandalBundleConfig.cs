@@ -13,9 +13,10 @@ namespace CMS
          bundles.Add(
           new ScriptBundle("~/Scripts/vendor")
              .Include("~/Scripts/jquery-{version}.js")
+             .Include("~/Scripts/charts/jquery-ui.min.js")
+             .Include("~/Scripts/charts/jquery.easing.1.3.js")
              .Include("~/Scripts/bootstrap.js")
              
-             //.Include("~/Scripts/kendo/kendo.web.js")
              .Include("~/Scripts/knockout-{version}.js")
              
              .Include("~/Scripts/KO-External-Temp-Engine/infuser.js")
@@ -25,6 +26,17 @@ namespace CMS
              .Include("~/Scripts/underscore.js")
              .Include("~/Scripts/kendo/kendo.all.js")
              .Include("~/Scripts/knockout-kendo.js")
+
+
+                .Include("~/Scripts/charts/jquery.flot.js")
+                .Include("~/Scripts/charts/jquery.flot.time.j")
+                .Include("~/Scripts/charts/jquery.flot.animator.min.js")
+                .Include("~/Scripts/charts/jquery.flot.resize.min.js")
+
+                .Include("~/Scripts/charts/sparkline.min.js")
+                .Include("~/Scripts/charts/easypiechart.js")
+                .Include("~/Scripts/charts/charts.js")
+
           );
 
          bundles.Add(
@@ -40,7 +52,10 @@ namespace CMS
              .Include("~/Content/toastr.css")
              .Include("~/Content/durandal.css")
 
+             //.Include("~/Content/superadmin.css")
              .Include("~/Content/app.css")
+             .Include("~/Content/generics.css")
+
 
          
              //.Include("~/content/kendo/kendo.common.min.css")

@@ -10,8 +10,8 @@ requirejs.config({
 
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
-define('kendo', kendo);
-define('kokendo', ko.kendo);
+//define('kendo', kendo);
+//define('kokendo', ko.kendo);
 define('infuser', infuser);
 define('toastr', toastr);
 define('underscore', _);
@@ -26,8 +26,8 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], f
    app.configurePlugins({
       router: true,
       dialog: true,
-      widget: true,
-      observable: true
+      widget: true//,
+      //observable: true
    });
 
    app.start().then(function() {

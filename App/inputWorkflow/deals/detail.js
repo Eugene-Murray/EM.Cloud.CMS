@@ -1,4 +1,5 @@
-﻿define(['durandal/system', 'knockout', 'plugins/router', 'kendo', 'kokendo', 'underscore'], function (system, ko, router, kendo, kokendo, _) {
+﻿//define(['durandal/system', 'knockout', 'plugins/router', 'kendo', 'kokendo', 'underscore'], function (system, ko, router, kendo, kokendo, _) {
+define(['durandal/system', 'knockout', 'plugins/router', 'underscore'], function (system, ko, router, _) {
     //debugger;
     var vm = {};
     vm.selectedRow = ko.observable(''); 
@@ -60,7 +61,7 @@
     };
 
     vm.onClick_Back = function () {
-        router.navigate('#listOfDeals');
+        router.navigate('#inputWorkflow/listOfDeals');
     }; 
 
     vm.onClick_UserGridConfig = function () {
