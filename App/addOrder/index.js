@@ -5,10 +5,11 @@
     //vm.investorVisible = ko.observable(true);
     //vm.generalVisible = ko.observable(false);
     //vm.generalAmounts = ko.observable(false);
-    vm.investorList = ko.observableArray([]);
+    vm.investorList = ko.observableArray();
     vm.selectedInvestor = ko.observable('');
-    vm.TrancheList = ko.observableArray([]);
-    
+    vm.TrancheList = ko.observableArray();
+    vm.currentPage = ko.observable(0);
+    vm.selectedTranche = ko.observable('');
     
 
 
@@ -18,21 +19,16 @@
         //vm.generalVisible(false);
 
         vm.SetupKendoGrids();
-
         vm.investorList(['IBM', 'Microsoft', 'Apple', 'SAP', 'Oracle', 'Telerik']);
-
-        vm.TrancheList([{ title: "Tranche 1", amount: "", price: "Reoffer" }]);
+        vm.TrancheList.push({ id: 1, title: "Tranche 1", amount: "", price: "Reoffer" });
 
     };
 
     vm.attached = function () {
 
-        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-            var x = e.target; // activated tab
-            var xx = e.relatedTarget; // previous tab
-        });
-
         $("#contacts").kendoMultiSelect();
+        //$(".sales-person").kendoMultiSelect();
+        //$(".zone").kendoMultiSelect();
     };
 
     vm.deactivate = function () {
@@ -65,12 +61,20 @@
 
     };
 
-    vm.onClick_EnterDetailedOrder = function () {
+    vm.onClick_SelectedTranche = function () {
+        vm.selectedTranche(this);
 
+        $('#tranche-carousel').carousel(this.id - 1);
     };
 
     vm.onClick_AddTranche = function () {
-        vm.TrancheList.push({ title: "Tranche -", amount: "", price: "Reoffer" });
+        var id = vm.TrancheList().length + 1;
+
+        vm.TrancheList.push({ id: id, title: "Tranche " + id, amount: "", price: "Reoffer" });
+
+        vm.currentPage((vm.TrancheList().length - 1));
+
+        
     };
 
 
@@ -81,9 +85,7 @@
             columns: [
                 { field: "title", title: "Title" },
                 { field: "amount", title: "Amount" },
-                { field: "price", title: "Price" },
-                { field: "", title: "<i class='fa fa-archive'></i>" }
-               
+                { field: "price", title: "Price" }
             ],
             //pageable:
             //{
