@@ -5,6 +5,10 @@
     vm.router = router;
     vm.num = 0;
 
+    vm.selectedPageStructureTemplate = ko.observable();
+    vm.allPageStructureTemplatesList = ko.observableArray([]);
+    vm.allWidgetsList
+
     vm.addTestPage = function () {
         var routes = vm.router.routes;
         vm.num++;
@@ -37,6 +41,10 @@
 
     vm.changeTemplate2 = function () {
         app.trigger('changeTemplate2', null);
+    };
+
+    vm.onClick_UpdateHomePage = function () {
+
     };
 
 
