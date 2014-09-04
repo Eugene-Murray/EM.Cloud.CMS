@@ -7,7 +7,7 @@
     //vm.generalAmounts = ko.observable(false);
     vm.investorList = ko.observableArray();
     vm.selectedInvestor = ko.observable('');
-    vm.TrancheList = ko.observableArray();
+    vm.TrancheList = ko.observableArray([{ id: 1, title: "Tranche 1", amount: "", price: "Reoffer", investorLevel : "" }]);
     vm.currentPage = ko.observable(0);
     vm.selectedTranche = ko.observable('');
     
@@ -20,7 +20,7 @@
 
         vm.SetupKendoGrids();
         vm.investorList(['IBM', 'Microsoft', 'Apple', 'SAP', 'Oracle', 'Telerik']);
-        vm.TrancheList.push({ id: 1, title: "Tranche 1", amount: "", price: "Reoffer" });
+        //vm.TrancheList.push({ id: 1, title: "Tranche 1", amount: "", price: "Reoffer" });
 
     };
 
@@ -85,7 +85,8 @@
             columns: [
                 { field: "title", title: "Title" },
                 { field: "amount", title: "Amount" },
-                { field: "price", title: "Price" }
+                { field: "price", title: "Price" },
+                { field: "investorLevel", title: "Investor Level %" }
             ],
             //pageable:
             //{
