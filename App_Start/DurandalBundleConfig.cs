@@ -40,6 +40,19 @@ namespace CMS
           );
 
          bundles.Add(
+         new ScriptBundle("~/Scripts/vendor2")
+            .Include("~/Scripts/jquery-{version}.js")
+            .Include("~/Scripts/knockout-{version}.js")
+            .Include("~/Scripts/KO-External-Temp-Engine/infuser.js")
+            .Include("~/Scripts/KO-External-Temp-Engine/trafficcop.js")
+            .Include("~/Scripts/KO-External-Temp-Engine/koexternaltemplateengine.js")
+            .Include("~/Scripts/toastr.js")
+            .Include("~/Scripts/underscore.js")
+            .Include("~/Scripts/kendo/kendo.all.js")
+            .Include("~/Scripts/knockout-kendo.js")
+         );
+
+         bundles.Add(
            new StyleBundle("~/Content/css")
              .Include("~/Content/ie10mobile.css")
              //.Include("~/Content/bootstrap.css")
