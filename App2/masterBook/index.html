@@ -1,0 +1,260 @@
+﻿
+<div class="mywell-large-white well-large">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    
+
+                        <h4>
+                            <span class="label label-success">
+                                DETAILS
+                            </span>
+                        </h4>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-danger">DEAL ICI</li>
+                            <li class="list-group-item list-group-item-warning">Tranche 5yr <span class="badge">3.25%</span></li>
+                            <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                            <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                            <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                            <li class="list-group-item list-group-item-warning">Tranche 3yr <span class="badge">2.25%</span></li>
+                            <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                            <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                            <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                            <li class="list-group-item list-group-item-warning">Tranche 7yr <span class="badge">4.25%</span></li>
+                            <li class="list-group-item list-group-item-info">Tranche Amount <span class="badge">100mm</span></li>
+                            <li class="list-group-item list-group-item-info">Total Orders @ <span class="badge">Px 235mm</span></li>
+                            <li class="list-group-item list-group-item-info">Allocated Amount <span class="badge">50mm</span></li>
+                        </ul>
+
+
+                 
+
+                </div>
+                <div class="col-md-8">
+                    <!-- Tabs -->
+                    <div class="tabbable tabs-right">
+                        <ul class="nav nav-tabs">
+                            <!--<li class="active">
+                                <a href="#Details" data-toggle="tab">
+                                    <i class="fa fa-university"></i>
+                                    <i class="fa fa-credit-card"></i>
+                                    Details
+                                </a>
+                            </li>-->
+
+                            <li class="active">
+                                <a href="#Composition-Structure" data-toggle="tab">
+                                    <i class="fa fa-bullseye"></i>
+                                    Composition & Structure
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Richness-Cheapness-Line" data-toggle="tab">
+                                    <i class="fa fa-random"></i>
+                                    Richness / Cheapness
+                                </a>
+                            </li>
+                            <li class="val-worldcheck-link">
+                                <a href="#Richness-Cheapness-Bar" data-toggle="tab">
+                                    <i class="fa fa-bars"></i>
+                                    Richness / Cheapness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#LatestBookUpdates" data-toggle="tab">
+                                    <i class="fa fa-book"></i>
+                                    Latest Book Updates
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#OutstandingTasks" data-toggle="tab">
+                                    <i class="fa fa-tasks"></i>
+                                    Outstanding Tasks
+                                </a>
+
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            
+                            <div class="tab-pane active" id="Composition-Structure">
+                                <h4>
+                                    <span class="label label-success">
+                                        Composition & Structure
+                                    </span>
+                                </h4>
+
+                                <center>
+                                    <div id="pieChart" class="text-center"></div></center>
+
+    <!--<div data-bind="kendoChart: {data: items, series: [{name: 'Deals', field: 'value'}]}" style="width: 500px"></div>-->
+</div>
+                            <div class="tab-pane" id="Richness-Cheapness-Line">
+
+                                <h4>
+                                    <span class="label label-success">
+                                        Richness / Cheapness
+                                    </span>
+                                </h4>
+
+                                <center><div id="lineChart" class="text-center"></div></center>
+                            </div>
+                            <div class="tab-pane" id="Richness-Cheapness-Bar">
+                                <h4>
+                                    <span class="label label-success">
+                                        Richness / Cheapness
+                                    </span>
+                                </h4>
+
+                                <center><div id="barChart"></div></center>
+                            </div>
+                            <div class="tab-pane" id="LatestBookUpdates">
+
+                                <h4>
+                                    <span class="label label-success">
+                                        Latest Book Updates
+                                    </span>
+                                </h4>
+
+                                <div class="val-scroll">
+                                    <table class="table table-hover" data-bind="kendoGrid: LatestBookUpdatesTable"></table>
+                                </div>
+                                <script id="LatestBookUpdatesTable-row-template" type="text/html">
+                                    <tr>
+                                        <td><span data-bind="text: Update" /></td>
+                                        <td><span data-bind="text: Time" /></td>
+                                    </tr>
+                                </script>
+
+                            </div>
+                            <div class="tab-pane" id="OutstandingTasks">
+                                <h4>
+                                    <span class="label label-success">
+                                        Outstanding Tasks
+                                    </span>
+                                </h4>
+
+                                <div class="val-scroll">
+                                    <table class="table table-hover" data-bind="kendoGrid: OutstandingTasksTable"></table>
+                                </div>
+                                <script id="OutstandingTasksTable-row-template" type="text/html">
+                                    <tr>
+                                        <td><span data-bind="text: OpenTask" /></td>
+                                        <td><input type="checkbox" data-bind="checked: Done" /></td>
+                                    </tr>
+                                </script>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ..Tabs -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+           
+
+            <div class="tile text-center" id="pie-chart">
+                <div class="tile-dark p-10">
+                    <div class="pie-chart-tiny" data-percent="86">
+                        <span class="percent"></span>
+                        <span class="pie-title">Tranche 1 <i class="m-l-5 fa fa-retweet"></i></span>
+                    </div>
+                    <div class="pie-chart-tiny" data-percent="23">
+                        <span class="percent"></span>
+                        <span class="pie-title">Tranche 2 <i class="m-l-5 fa fa-retweet"></i></span>
+                    </div>
+                    <div class="pie-chart-tiny" data-percent="57">
+                        <span class="percent"></span>
+                        <span class="pie-title">Tranche 3 <i class="m-l-5 fa fa-retweet"></i></span>
+                    </div>
+                    <div class="pie-chart-tiny" data-percent="34">
+                        <span class="percent"></span>
+                        <span class="pie-title">Tranche 4 <i class="m-l-5 fa fa-retweet"></i></span>
+                    </div>
+                    <div class="pie-chart-tiny" data-percent="81">
+                        <span class="percent"></span>
+                        <span class="pie-title">Tranche 5 <i class="m-l-5 fa fa-retweet"></i></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="val-scroll">
+                <table class="table table-hover" data-bind="kendoGrid: ListOfDealsTable"></table>
+            </div>
+            <script id="ListOfDealsTable-row-template" type="text/html">
+                <tr>
+                    <td><span data-bind="text: id" /></td>
+                    <td><span data-bind="text: BusinessType" /></td>
+                    <td><span data-bind="text: Project" /></td>
+                    <td><span data-bind="text: CorpSponsor" /></td>
+                    <td><span data-bind="text: Tranche" /></td>
+                    <td><span data-bind="text: Status" /></td>
+                    <td><span data-bind="text: CCY" /></td>
+                    <td><span data-bind="text: LocalCCYAmount" /></td>
+                    <td><span data-bind="text: Amt" /></td>
+                    <td><span data-bind="text: Facility" /></td>
+                    <td>
+                        <span data-bind="text: Indent" />
+                    </td>
+                    <td>
+                        <span data-bind="text: Seniority" />
+                    </td>
+                    <td>
+                        <span data-bind="text: EcoPercent" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ExpAmount" />
+                    </td>
+                    <td>
+                        <span data-bind="text: AmountSyndicate" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ExpPostSyndicate" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ProFormaEco" />
+                    </td>
+                    <td>
+                        <span data-bind="text: ProFormaAmount" />
+                    </td>
+                    <td>
+                        <span data-bind="text: Value" />
+                    </td>
+
+                    <td>
+                        <span data-bind="text: BridgeLimit" />
+                    </td>
+                    <td>
+                        <span data-bind="text: SponsorLimit" />
+                    </td>
+                </tr>
+            </script>
+
+        </div>
+    </div>
+</div>

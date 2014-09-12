@@ -9,39 +9,12 @@
            // MetsiMenu
            $('#side-menu').metisMenu();
 
-           // Collapse ibox function
-           $('.collapse-link').click(function () {
-               var ibox = $(this).closest('div.ibox');
-               var button = $(this).find('i');
-               var content = ibox.find('div.ibox-content');
-               content.slideToggle(200);
-               button.toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
-               ibox.toggleClass('').toggleClass('border-bottom');
-               setTimeout(function () {
-                   ibox.resize();
-                   ibox.find('[id^=map-]').resize();
-               }, 50);
-           });
-
-           // Close ibox function
-           $('.close-link').click(function () {
-               var content = $(this).closest('div.ibox');
-               content.remove();
-           });
-
-           // Small todo handler
-           $('.check-link').click(function () {
-               var button = $(this).find('i');
-               var label = $(this).next('span');
-               button.toggleClass('fa-check-square').toggleClass('fa-square-o');
-               label.toggleClass('todo-completed');
-               return false;
-           });
+           
 
            // Append config box / Only for demo purpose
-           $.get("skin-config.html", function (data) {
-              $('body').append(data);
-           });
+           //$.get("skin-config.html", function (data) {
+           //   $('body').append(data);
+           //});
 
            // minimalize menu
            $('.navbar-minimalize').click(function () {
@@ -76,7 +49,11 @@
        },
        activate: function () {
            return router.map([
-              { route: ['home', ''], title: 'Home', moduleId: 'home/index', nav: true }
+              { route: ['home', ''], title: 'Home', moduleId: 'home/index', nav: true },
+              { route: 'modernBrowserUIFeatures', moduleId: 'modernBrowserUIFeatures/index', title: 'Modern Browser UI', nav: true },
+              { route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', nav: true },
+              { route: 'masterBook', moduleId: 'masterBook/index', title: 'Master Book', nav: true },
+              { route: 'reporting', moduleId: 'reporting/index', title: 'Reporting', nav: true }
            ]).buildNavigationModel()
              .mapUnknownRoutes('home', "#home")
              .activate();

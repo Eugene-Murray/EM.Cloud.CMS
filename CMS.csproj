@@ -132,9 +132,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App2\addOrder\index.html" />
+    <Content Include="App2\addOrder\index.js" />
+    <Content Include="App2\deals\index.html" />
+    <Content Include="App2\deals\index.js" />
     <Content Include="App2\home\index.html" />
     <Content Include="App2\home\index.js" />
     <Content Include="App2\main.js" />
+    <Content Include="App2\masterBook\index.html" />
+    <Content Include="App2\masterBook\index.js" />
+    <Content Include="App2\modernBrowserUIFeatures\index.html" />
+    <Content Include="App2\modernBrowserUIFeatures\index.js" />
+    <Content Include="App2\reporting\index.html" />
+    <Content Include="App2\reporting\index.js" />
     <Content Include="App2\shell.html" />
     <Content Include="App2\shell.js" />
     <Content Include="App\altHomePages\index.html" />
@@ -368,6 +378,7 @@
     </Content>
     <Content Include="Content\toastr.less" />
     <Content Include="Content\toastr.scss" />
+    <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Views\Home\skin-config.html" />
     <Content Include="WrapStrap\inspinia\404.html" />
     <Content Include="WrapStrap\inspinia\500.html" />

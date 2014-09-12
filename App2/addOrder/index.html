@@ -1,0 +1,561 @@
+﻿<!--<div class="col-md-1"></div>-->
+
+
+
+<div class="col-md-12">
+
+    <div class="pull-right">
+
+        <a href="#" class="btn btn-success">SAVE <i class="fa fa-floppy-o"></i></a>
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="row">
+
+    <div class="col-md-12"><br /></div>
+
+</div>
+
+
+
+
+
+<div class="row">
+
+    <div class="col-md-6">
+
+
+
+        <div class="panel panel-default">
+
+
+
+            <div class="panel-heading">
+
+                <h4>
+
+                    <span class="label label-success">
+
+                        NEW ORDER DETAILS
+
+                    </span>
+
+                </h4>
+
+
+
+            </div>
+
+
+
+            <div class="panel-body">
+
+                <div class="row">
+
+                    <div class="col-md-12"><br /></div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12"><br /></div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3 input-margin"><div class="pull-right">Investor</div></div>
+
+                    <div class="col-md-8 input-margin">
+
+                        <!--<input type="text" class="form-control" data-bind="kendoAutoComplete: {data: investorList, value: selectedInvestor }" />-->
+
+                        <input type="text" class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-1 input-margin"></div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3 input-margin"><div class="pull-right">Contact</div></div>
+
+                    <div class="col-md-8 input-margin">
+
+
+
+                        <select id="contacts" multiple="multiple" data-placeholder="Select contact...">
+
+                            <option>Steven White</option>
+
+                            <option>Nancy King</option>
+
+                            <option>Nancy Davolio</option>
+
+                            <option>Robert Davolio</option>
+
+                            <option>Michael Leverling</option>
+
+                            <option>Andrew Callahan</option>
+
+                            <option>Michael Suyama</option>
+
+                            <option>Anne King</option>
+
+                            <option>Laura Peacock</option>
+
+                            <option>Robert Fuller</option>
+
+                            <option>Janet White</option>
+
+                            <option>Nancy Leverling</option>
+
+                            <option>Robert Buchanan</option>
+
+                            <option>Margaret Buchanan</option>
+
+                            <option>Andrew Fuller</option>
+
+                            <option>Anne Davolio</option>
+
+                            <option>Andrew Suyama</option>
+
+                            <option>Nige Buchanan</option>
+
+                            <option>Laura Fuller</option>
+
+                        </select>
+
+
+
+                    </div>
+
+                    <div class="col-md-1 input-margin"></div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-3 input-margin"><div class="pull-right">Sales Person</div></div>
+
+                    <div class="col-md-8 input-margin">
+
+
+
+                        <select class="sales-person form-control" data-placeholder="Select Sales Person...">
+
+                            <option>Steven White</option>
+
+                            <option>Nancy King</option>
+
+                            <option>Nancy Davolio</option>
+
+                            <option>Robert Davolio</option>
+
+                            <option>Michael Leverling</option>
+
+                            <option>Andrew Callahan</option>
+
+                            <option>Michael Suyama</option>
+
+                            <option>Anne King</option>
+
+                            <option>Laura Peacock</option>
+
+                            <option>Robert Fuller</option>
+
+                            <option>Janet White</option>
+
+                            <option>Nancy Leverling</option>
+
+                            <option>Robert Buchanan</option>
+
+                            <option>Margaret Buchanan</option>
+
+                            <option>Andrew Fuller</option>
+
+                            <option>Anne Davolio</option>
+
+                            <option>Andrew Suyama</option>
+
+                            <option>Nige Buchanan</option>
+
+                            <option>Laura Fuller</option>
+
+                        </select>
+
+
+
+                    </div>
+
+                    <div class="col-md-1 input-margin"></div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-3 input-margin"><div class="pull-right">Zone</div></div>
+
+                    <div class="col-md-8 input-margin">
+
+
+
+                        <select class="zone form-control" data-placeholder="Select Zone...">
+
+                            <option>North America</option>
+
+                            <option>South America</option>
+
+                            <option>Europe</option>
+
+                            <option>Asia</option>
+
+                            <option>Oz</option>
+
+                        </select>
+
+
+
+                    </div>
+
+                    <div class="col-md-1 input-margin"></div>
+
+                </div>
+
+
+
+
+
+                <div class="row">
+
+                    <div class="col-md-12"><br /></div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-1"></div>
+
+
+
+                    <div class="col-md-10">
+
+                        <div class="pull-right">
+
+                            <a href="#" data-bind="click: onClick_AddTranche" class="btn btn-success">Add Tranche <i class='fa fa-cloud-download'></i></a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-1"></div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-1"></div>
+
+
+
+                    <div class="col-md-10">
+
+
+
+
+
+                        <table class="table table-hover" data-bind="kendoGrid: TrancheTable"></table>
+
+                        <script id="TrancheTable-row-template" type="text/html">
+
+                            <tr data-bind="click: $parent.onClick_SelectedTranche">
+
+                                <td><span data-bind="text: title" /></td>
+
+                                <td><input type="text" data-bind="value: amount" /></td>
+
+                                <td><input type="text" data-bind="value: price" /></td>
+
+                                <td><input type="text" data-bind="value: investorLevel" /></td>
+
+                            </tr>
+
+                        </script>
+
+                    </div>
+
+
+
+                    <div class="col-md-1"></div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-12"><br /></div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="col-md-6">
+
+
+
+
+
+        <!-- Carousel-->
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+
+
+
+
+
+                <h4>
+
+                    <span class="label label-success">
+
+                        TRANCHES
+
+                    </span>
+
+
+
+                </h4>
+
+
+
+
+
+                <!--<div class="pull-right">-->
+                <!--<button type="button" class="btn btn-primary" data-bind="click: save"><i class="fa fa-floppy-o"></i> Save</button>-->
+                <!--</div>-->
+
+
+
+            </div>
+
+
+
+            <div class="panel-body">
+
+                <div id="tranche-carousel" class="carousel" data-ride="carousel slide" data-interval="false">
+
+                    <!-- Indicators -->
+
+                    <ol class="carousel-indicators">
+
+
+
+                        <!--ko foreach: TrancheList -->
+
+                        <li data-target="#tranche-carousel" data-bind="attr: {'data-slide-to': $index }, css: {'active' : $index() == $root.currentPage() } ">
+
+                            <span data-bind="text: $data.id"></span>
+
+                        </li>
+
+                        <!--/ko-->
+
+
+
+                    </ol>
+
+
+
+                    <!-- Wrapper for slides -->
+
+                    <div class="carousel-inner">
+
+
+
+                        <!--ko foreach: TrancheList -->
+
+                        <div class="item" data-bind="css: {'active' : $index() == $root.currentPage() } ">
+
+
+
+                            <!-- Item -->
+
+                            <div>
+
+
+
+                                <div class="row">
+
+                                    <div class="col-md-12"><h3><b>Tranche <span data-bind="text: $data.id"></span></b></h3></div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-2 input-margin"><div class="pull-right">Comment</div></div>
+
+                                    <div class="col-md-10 input-margin">
+
+                                        <textarea class="form-control" rows="5"> </textarea>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row">
+
+                                    <div class="col-md-2 input-margin"><div class="pull-right">Hedge Bond</div></div>
+
+                                    <div class="col-md-10 input-margin">
+
+
+
+                                        <input type="text" class="form-control" />
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-2 input-margin"><div class="pull-right">Hedge Amount</div></div>
+
+                                    <div class="col-md-10 input-margin">
+
+
+
+                                        <input type="text" class="form-control" />
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-2 input-margin"><div class="pull-right">Hedge Type</div></div>
+
+                                    <div class="col-md-10 input-margin">
+
+
+
+                                        <select class="form-control" data-placeholder="Select Hedge Type...">
+
+                                            <option>DW</option>
+
+                                            <option>DW c</option>
+
+                                            <option>DW g</option>
+
+                                        </select>
+
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="row">
+
+                                    <div class="col-md-12"><br /></div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <!-- ../Item -->
+
+
+
+
+
+
+
+                        </div>
+
+                        <!--/ko-->
+
+
+
+
+
+                    </div>
+
+
+
+                    <!-- Controls -->
+                    <!-- ko if: TrancheList().length > 1 -->
+
+                    <a class="left carousel-control" href="#tranche-carousel" role="button" data-slide="prev">
+
+                        <span class="glyphicon glyphicon-chevron-left" style="color:black"></span>
+
+                        <!--<i class="fa fa-arrow-circle-left"></i>-->
+
+                    </a>
+
+                    <a class="right carousel-control" href="#tranche-carousel" role="button" data-slide="next">
+
+                        <span class="glyphicon glyphicon-chevron-right" style="color:black"></span>
+
+                        <!--<i class="fa fa-arrow-circle-right"></i>-->
+
+                    </a>
+
+                    <!--/ko-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ../ Carousel-->
+
+    </div>
+
+</div>
+
+
+
