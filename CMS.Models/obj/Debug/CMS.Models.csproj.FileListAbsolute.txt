@@ -7,6 +7,5 @@ C:\Code\MyCode\BarCap\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.csprojResolve
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.dll
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\bin\Debug\CMS.Models.pdb
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\bin\Debug\DataAnnotationsExtensions.dll
-C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.csprojResolveAssemblyReference.cache
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.dll
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\CMS.Models\obj\Debug\CMS.Models.pdb

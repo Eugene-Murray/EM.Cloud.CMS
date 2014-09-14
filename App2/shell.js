@@ -50,10 +50,12 @@
        activate: function () {
            return router.map([
               { route: ['home', ''], title: 'Home', moduleId: 'home/index', nav: true },
+              { route: 'home', title: 'Home', moduleId: 'home/index', nav: true },
               { route: 'modernBrowserUIFeatures', moduleId: 'modernBrowserUIFeatures/index', title: 'Modern Browser UI', nav: true },
               { route: 'addOrder', moduleId: 'addOrder/index', title: 'Add Order', nav: true },
               { route: 'masterBook', moduleId: 'masterBook/index', title: 'Master Book', nav: true },
-              { route: 'reporting', moduleId: 'reporting/index', title: 'Reporting', nav: true }
+              { route: 'reporting', moduleId: 'reporting/index', title: 'Reporting', nav: true },
+              { route: 'siteConfiguration', moduleId: 'siteConfiguration/index', title: 'Site Configuration', nav: true }
            ]).buildNavigationModel()
              .mapUnknownRoutes('home', "#home")
              .activate();

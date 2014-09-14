@@ -18,6 +18,8 @@ namespace CMS
              url: "{controller}/{action}/{id}",
              defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
          );
+
+         //RouteTable.Routes.MapHubs();
       }
    }
 }

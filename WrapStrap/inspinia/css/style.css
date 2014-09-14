@@ -3517,3 +3517,109 @@ body.skin-3 {
     margin-top: 50px;
     color: #00AEEF;
 }
+
+.card {    
+    /*position: relative;*/        
+    margin-top: 8px;     
+    cursor: pointer
+}
+
+.previous.hidden {
+   visibility: hidden;
+   display: block!important;
+}
+
+.next.hidden {
+   visibility: hidden;
+   display: block!important;
+}
+
+.card .face {
+    position:absolute;
+    /*position:fixed;*/
+    min-height: 400px;
+    min-width: 400px;
+    
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    -o-transition: .8s ease-in-out;
+    transition: .8s ease-in-out;
+}
+
+.card .back {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;    
+    backface-visibility: hidden;
+
+    -moz-transform: perspective(1500px) rotateY(-180deg);
+    -webkit-transform: perspective(1500px) rotateY(-180deg);    
+    transform: perspective(1500px) rotateY(-180deg);        
+}
+
+.card .front {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -moz-transform: perspective(1500px) rotateY(0deg);
+    -webkit-transform: perspective(1500px) rotateY(0deg);
+    transform: perspective(1500px) rotateY(0deg);    
+}
+
+.card.flip .back {
+    -moz-transform: perspective(1500px) rotateY(0);
+    -webkit-transform: perspective(1500px) rotateY(0);
+    transform: perspective(1500px) rotateY(0);
+}
+.card.flip .front {
+    -webkit-transform: perspective(1500px) rotateY(180deg);
+    -moz-transform: perspective(1500px) rotateY(180deg);
+    transform: perspective(1500px) rotateY(180deg);
+}
+
+
+.mywell {
+  
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #bfe6f6;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.mywell2 {
+
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #ed5565;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.mywell-large {
+  min-height: 200px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #daecf4;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.mywell-large-white {
+  min-height: 1000px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+

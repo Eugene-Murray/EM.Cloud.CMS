@@ -98,3 +98,4 @@ C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\bin\System.Web.WebPages.Razor.xml
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\obj\Debug\CMS.dll
 C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\obj\Debug\CMS.pdb
+C:\Code\DownloadedCode\GitHub\EM.Cloud.CMS\bin\Newtonsoft.Json.xml
