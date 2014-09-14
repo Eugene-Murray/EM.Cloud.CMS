@@ -6,7 +6,7 @@ namespace CMS.Controllers
    {
       public ActionResult Index()
       {
-         return View();
+         return View("Index2");
       }
 
       public ActionResult Index2()
